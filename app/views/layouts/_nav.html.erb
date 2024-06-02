@@ -1,0 +1,98 @@
+<nav class="relative bg-cover bg-center" style="background-image: url('<%= asset_path('nav-bg.png') %>');">
+  <div class="absolute inset-0"></div>
+  <div class="relative mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <div class="relative flex h-16 items-center justify-between">
+      <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+        <!-- Mobile menu button-->
+        <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+          <span class="absolute -inset-0.5"></span>
+          <span class="sr-only">Open main menu</span>
+          <!--
+            Icon when menu is closed.
+
+            Menu open: "hidden", Menu closed: "block"
+          -->
+          <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 0H6C6.26522 0 6.51957 0.105357 6.70711 0.292893C6.89464 0.48043 7 0.734784 7 1C7 1.26522 6.89464 1.51957 6.70711 1.70711C6.51957 1.89464 6.26522 2 6 2H1C0.734784 2 0.48043 1.89464 0.292893 1.70711C0.105357 1.51957 0 1.26522 0 1C0 0.734784 0.105357 0.48043 0.292893 0.292893C0.48043 0.105357 0.734784 0 1 0ZM8 8H13C13.2652 8 13.5196 8.10536 13.7071 8.29289C13.8946 8.48043 14 8.73478 14 9C14 9.26522 13.8946 9.51957 13.7071 9.70711C13.5196 9.89464 13.2652 10 13 10H8C7.73478 10 7.48043 9.89464 7.29289 9.70711C7.10536 9.51957 7 9.26522 7 9C7 8.73478 7.10536 8.48043 7.29289 8.29289C7.48043 8.10536 7.73478 8 8 8ZM1 4H13C13.2652 4 13.5196 4.10536 13.7071 4.29289C13.8946 4.48043 14 4.73478 14 5C14 5.26522 13.8946 5.51957 13.7071 5.70711C13.5196 5.89464 13.2652 6 13 6H1C0.734784 6 0.48043 5.89464 0.292893 5.70711C0.105357 5.51957 0 5.26522 0 5C0 4.73478 0.105357 4.48043 0.292893 4.29289C0.48043 4.10536 0.734784 4 1 4Z" fill="white"/></svg>
+
+          <!--
+            Icon when menu is open.
+
+            Menu open: "block", Menu closed: "hidden"
+          -->
+          <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between">
+        <div class="flex flex-shrink-0 items-center">
+          <%= image_tag "logo-main.png", class:"h-8 w-auto" %>
+        </div>
+        <div class="hidden sm:ml-6 sm:block">
+          <div class="flex space-x-4 justify-center">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <%= link_to "About Us", base_about_path, class: 'text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium' %>
+
+            <%= link_to "Blog", base_about_path, class: 'text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium' %>
+
+            <%= link_to "Contact Us", base_about_path, class: 'text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium' %>
+          </div>
+        </div>
+      </div>
+
+      <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+        <!-- Stay in the loop btn -->
+        <div class="relative ml-3 hidden sm:block">
+          <%= render 'layouts/loop' %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile menu, show/hide based on menu state. -->
+  <div class="sm:hidden hidden" id="mobile-menu">
+    <div class="space-y-1 px-2 pb-3 pt-2">
+      <%= link_to "About Us", base_about_path, class: 'text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium' %>
+      <%= link_to "Blog", root_path, class: 'text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium' %>
+      <%= link_to "Contact Us", base_contact_path, class: 'text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium' %>
+    </div>
+  </div>
+</nav>
+
+<script>
+// Toggle mobile menu
+document.querySelector('button[aria-controls="mobile-menu"]').addEventListener('click', function() {
+  var menu = document.getElementById('mobile-menu');
+  var openIcon = this.querySelector('svg.block');
+  var closeIcon = this.querySelector('svg.hidden');
+
+  if (menu.classList.contains('hidden')) {
+    menu.classList.remove('hidden');
+    openIcon.classList.add('hidden');
+    closeIcon.classList.remove('hidden');
+  } else {
+    menu.classList.add('hidden');
+    openIcon.classList.remove('hidden');
+    closeIcon.classList.add('hidden');
+  }
+});
+
+// Toggle profile dropdown
+document.getElementById('user-menu-button').addEventListener('click', function() {
+  var menu = this.nextElementSibling;
+  if (menu.classList.contains('hidden')) {
+    menu.classList.remove('hidden');
+  } else {
+    menu.classList.add('hidden');
+  }
+});
+
+// Close profile dropdown when clicking outside
+window.addEventListener('click', function(event) {
+  var menuButton = document.getElementById('user-menu-button');
+  var menu = menuButton.nextElementSibling;
+  if (!menuButton.contains(event.target) && !menu.contains(event.target)) {
+    menu.classList.add('hidden');
+  }
+});
+</script>
