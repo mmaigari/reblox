@@ -1,8 +1,8 @@
 <div class="w-full" style="background-color: #00234c;">
-    <div class="flex flex-col-reverse lg:flex-row lg:min-h-[400px] sm:min-h-[600px]"> <!-- Increased height for small screens -->
-        <div class="flex items-center text-center lg:text-left px-8 md:px-12 lg:w-1/2 sm:w-full lg:min-h-0 sm:min-h-[50vh] lg:mt-[-20px] sm:mt-0"> <!-- Adjusted sm:mt to 0 and increased sm:min-h -->
+    <div class="flex flex-col-reverse lg:flex-row min-h-[560px] sm:min-h-[560px]"> <!-- Adjusted min-height -->
+        <div class="flex items-center text-center lg:text-left px-8 md:px-12 lg:w-1/2 sm:w-full min-h-[40vh] lg:mt-[-48px] sm:mt-[-32px] sm:pt-0"> <!-- Adjusted margin-top -->
             <div class="w-full">
-                <h1 class="m-0 w-full relative text-white leading-[100%] inline-block max-w-[100%] shrink-0 text-3xl md:text-4xl">
+                <h1 class="m-0 w-full relative text-white leading-[100%] inline-block max-w-[100%] shrink-0 text-3xl md:text-4xl sm:text-2xl"> <!-- Added sm:text-2xl -->
                     <span class="embrace-the">Embrace the </span>
                     <i class="real-future">
                         <span>Real Future</span>
@@ -16,28 +16,28 @@
                 <p class="a-cutting-edge-digital">
                     A cutting-edge digital solution that empowers real estate investors with Secure, Accessible and Affordable investment opportunities globally.
                 </p>
-              <div class="flex justify-center lg:justify-start mt-6">
-                  <div class="mr-4"><%= render 'layouts/loop' %></div>
-                  <div><%= render 'layouts/watch' %></div>
-              </div>
+                <div class="flex justify-center lg:justify-start mt-4">
+                    <div class="mr-2"><%= render 'layouts/loop' %></div>
+                    <div><%= render 'layouts/watch' %></div>
+                </div>
 
                 <br>
-                <a class="mx-4 px-4 py-3 bg-gray-300 text-gray-900 text-xs font-semibold rounded hover:bg-gray-400" href="#">Learn More</a>
+                <a class="mx-2 px-3 py-2 bg-gray-300 text-gray-900 text-xs font-semibold rounded hover:bg-gray-400" href="#">Learn More</a>
             </div>
         </div>
-        <div class="lg:w-1/2 lg:h-[200px] h-48 sm:w-full sm:h-48"> <!-- Adjusted height for small screens -->
-            <%= image_tag "bg-logo.png", class:"h-auto w-auto" %>
+        <div class="lg:w-1/2 sm:w-full flex items-center justify-center sm:pb-2">
+            <%= image_tag "bg-logo.png", class:"max-w-full max-h-full sm:max-h-[80%]" %> <!-- Adjusted image height -->
         </div>
     </div>
 </div>
 
 <style>
 @media (min-width: 1024px) {
-  .lg\:mt-[-20px] { /* Adjusted to shift text slightly upward */
-    margin-top: -20px;
+  .lg\:mt-[-48px] { /* Further adjusted margin-top for large screens */
+    margin-top: -48px;
   }
-  .lg\:min-h-[400px] { /* Adjusted height */
-    min-height: 400px;
+  .min-h-[560px] {
+    min-height: 560px; /* Reduced by 20% from 700px */
   }
 }
 
@@ -45,21 +45,41 @@
   .sm\:flex-col {
     flex-direction: column;
   }
-  .sm\:min-h-[600px] { /* Increased minimum height for small screens */
-    min-height: 600px;
+  .min-h-[560px] {
+    min-height: 560px; /* Reduced by 20% from 700px */
   }
-  .min-h-[50vh] {
-    min-height: 50vh; /* Increased minimum height for the text section */
+  .min-h-[40vh] {
+    min-height: 40vh; /* Reduced by 20% from 50vh */
   }
-  .h-48 {
-    height: 48vh; /* Adjusted height for the image */
+  .sm\:mt-[-32px] { /* Further adjusted margin-top for small screens */
+    margin-top: -32px;
+  }
+  .max-w-full {
+    max-width: 100%;
+  }
+  .max-h-full {
+    max-height: 100%;
+  }
+  .sm\:pt-0 { /* Adjusted padding-top for small screens */
+    padding-top: 0;
+  }
+  .sm\:pb-2 {
+    padding-bottom: 0.5rem;
+  }
+  .sm\:max-h-[80%] {
+    max-height: 80%;
   }
   .mt-4 {
     margin-top: 1rem;
   }
-  .sm\:mt-0 { /* Reset margin-top to 0 for small screens */
-    margin-top: 0;
+  .mr-2 {
+    margin-right: 0.5rem;
+  }
+  .sm\:text-2xl {
+    font-size: 1.5rem; /* Added for small screens */
+  }
+  .sm\:text-xl {
+    font-size: 1.25rem; /* Added for small screens */
   }
 }
-
 </style>
