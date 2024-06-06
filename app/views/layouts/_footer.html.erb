@@ -33,12 +33,13 @@
           </div>
           <div class="footer-bottom">
             <div class="copyright-reblox-wrapper">
-              <b class="copyright-reblox">© Copyright Reblox</b>
+              <b class="copyright-reblox">© Copyright Reblox 2024</b>
             </div>
             <b class="privacy-policy-and-container">
-              <span class="privacy-policy">Privacy Policy</span>
+              <span class="privacy-policy"> <%= link_to '>Privacy Policy', base_contact_path %></span>
+
               <span class="and"> and </span>
-              <span class="terms-of-service">Terms of Service</span>
+              <span class="terms-of-service"><%= link_to 'Terms of Service', base_contact_path %></span>
             </b>
           </div>
         </div>
@@ -47,13 +48,16 @@
             <b class="heading6">Links</b>
             <div class="footer-links">
               <div class="link">
-                <div class="link1">About us</div>
+               
+                <%= link_to 'Contact Us', base_contact_path, class: 'link1' %>
               </div>
               <div class="link2">
-                <div class="link3">Blog</div>
+                
+                <%= link_to 'Blog', root_path, class: 'link3' %>
               </div>
               <div class="link4">
-                <div class="link5">Contact us</div>
+                
+                <%= link_to 'Contact Us', base_contact_path, class: 'link5' %>
               </div>
             </div>
           </div>
@@ -64,43 +68,32 @@
             <div class="social-links">
               <div class="link6">
                 <div class="social-link-icon">
-                  <img
-                    class="brand-facebook-icon"
-                    alt=""
-                    src="./public/brandfacebook.svg"
-                  />
+                
+                <%= image_tag "public/brandfacebook.svg", class:"brand-facebook-icon" %>
                 </div>
-                <div class="facebook">Facebook</div>
+                 <a href="https://instagram.com/reblox" class="facebook">Facebook</a>
               </div>
               <div class="link7">
                 <div class="brand-instagram-wrapper">
-                  <img
-                    class="brand-instagram-icon"
-                    alt=""
-                    src="./public/brandinstagram.svg"
-                  />
+                
+                 <%= image_tag "public/brandinstagram.svg", class:"brand-instagram-icon" %>
                 </div>
-                <div class="instagram">Instagram</div>
+                 <a href="https://instagram.com/reblox" class="instagram">Instagram</a>
               </div>
               <div class="link8">
                 <div class="brand-twitter-wrapper">
-                  <img
-                    class="brand-twitter-icon"
-                    alt=""
-                    src="./public/brandtwitter.svg"
-                  />
+                
+                  <%= image_tag "public/brandtwitter.svg", class:"brand-twitter-icon" %>
                 </div>
-                <div class="twitter">Twitter</div>
+                 <a href="https://twitter.com/reblox" class="twitter">Twitter</a>
               </div>
               <div class="link9">
                 <div class="brand-linkedin-wrapper">
-                  <img
-                    class="brand-linkedin-icon"
-                    alt=""
-                    src="./public/brandlinkedin.svg"
-                  />
+                 
+<%= image_tag "public/brandlinkedin.svg", class:"brand-linkedin-icon" %>
                 </div>
-                <div class="linkedin">LinkedIn</div>
+                
+                <a href="https://linkedin.com/reblox" class="linkedin">LinkedIn</a>
               </div>
             </div>
           </div>

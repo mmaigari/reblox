@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  email: MyString
+  age: MyString
+  location: MyString
+  invested: false
+  ifso: MyString
+  goals: MyString
+  challenge: MyString
+  solution: MyString
+  solution_desc: MyText
+  comfort: MyString
+  liquidity: MyString
+  ready: false
+
+two:
+  email: MyString
+  age: MyString
+  location: MyString
+  invested: false
+  ifso: MyString
+  goals: MyString
+  challenge: MyString
+  solution: MyString
+  solution_desc: MyText
+  comfort: MyString
+  liquidity: MyString
+  ready: false
