@@ -13,6 +13,8 @@ class CreateSurveys < ActiveRecord::Migration[7.1]
       t.string :comfort
       t.string :liquidity
       t.boolean :ready
+      t.boolean :range
+
 
       t.timestamps
     end
