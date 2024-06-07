@@ -1,10 +1,16 @@
-<p style="color: green"><%= notice %></p>
 
-<%= render @survey %>
 
-<div>
-  <%= link_to "Edit this survey", edit_survey_path(@survey) %> |
-  <%= link_to "Back to surveys", surveys_path %>
-
-  <%= button_to "Destroy this survey", @survey, method: :delete %>
-</div>
+<div class=" h-screen">
+      <div class="bg-white p-6  md:mx-auto">
+      
+        <%= image_tag "public/logo-in-png@2x.png", class:"w-auto h-16 mx-auto my-6" %>
+        <div class="text-center">
+            <h3 class="md:text-2xl text-base text-gray-900 font-semibold text-center">Thank You</h3>
+            <p class="text-gray-600 my-2 w-auto">We sincerely appreciate your participation in this survey. Your insights are invaluable in shaping the future of real estate investment opportunities with Reblox</p>
+            <p> Have a great day!  </p>
+            <div class="py-10 text-center">
+                              <%= link_to "Back to Home", root_path, class:'bg-[#0fc3ff] text-white rounded-full px-4 py-2 hover:bg-opacity-80' %>
+            </div>
+        </div>
+    </div>
+  </div>

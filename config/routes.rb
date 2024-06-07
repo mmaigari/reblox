@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :blogs
   resources :surveys
   get 'base/home'
   get 'base/about'
