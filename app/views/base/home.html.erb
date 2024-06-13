@@ -1,2 +1,344 @@
-<h1>Base#home</h1>
-<p>Find me in app/views/base/home.html.erb</p>
+<%= render 'layouts/nav' %>
+<section class="dark:bg-[#00234c] dark:text-white" style="font-family: 'Nunito', sans-serif;">
+    <div class="container flex flex-col-reverse lg:flex-row justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:justify-between">
+        <div class="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
+            <h1 class="text-5xl font-bold leading-none sm:text-6xl">Embrace the
+                <span class="dark:text-violet-600"><i>Real Future,</i> </span>Today
+            </h1>
+            <p class="mt-6 mb-8 text-lg sm:mb-12">A cutting-edge digital solution that empowers real estate investors with Secure, Accessible and Affordable investment opportunities globally.
+                
+            </p>
+
+            	<div class="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start"><div class="">
+  <button class="animate-border inline-block rounded-md bg-white bg-gradient-to-r from-[#00234c] via-white to-[#00234c] bg-[length:400%_400%] p-1">
+    <span class="inline-block justify-center rounded-md bg-[#00234c] px-5 py-3 text-white">Watch Intro 
+				    <span class="ml-2">
+				        <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+				            <path d="M7.49992 14.6667C11.1818 14.6667 14.1666 11.6819 14.1666 8.00001C14.1666 4.31811 11.1818 1.33334 7.49992 1.33334C3.81802 1.33334 0.833252 4.31811 0.833252 8.00001C0.833252 11.6819 3.81802 14.6667 7.49992 14.6667Z" stroke="#E9FAFF" stroke-linecap="round" stroke-linejoin="round"/>
+				            <path d="M5.83325 5.9769C5.83325 5.65871 5.83325 5.49961 5.89975 5.4108C5.95769 5.33339 6.04639 5.28497 6.14284 5.27808C6.25351 5.27017 6.38733 5.35621 6.65499 5.52827L9.80205 7.55138C10.0343 7.70069 10.1504 7.77534 10.1905 7.87027C10.2256 7.95321 10.2256 8.04681 10.1905 8.12975C10.1504 8.22468 10.0343 8.29933 9.80205 8.44864L6.65499 10.4718C6.38734 10.6438 6.25351 10.7298 6.14284 10.7219C6.04639 10.7151 5.95769 10.6666 5.89975 10.5892C5.83325 10.5004 5.83325 10.3413 5.83325 10.0231V5.9769Z" stroke="#E9FAFF" stroke-linecap="round" stroke-linejoin="round"/>
+				        </svg>
+				    </span>
+				     </span>
+  </button>
+</div>
+
+				<a rel="noopener noreferrer" href="#" class="animate-border inline-block rounded bg-[#00234c] bg-gradient-to-r from-red-500 via-purple-500 to-blue-500 bg-[length:400%_400%] p-1">
+				    Watch Intro 
+				    <span class="ml-2">
+				        <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+				            <path d="M7.49992 14.6667C11.1818 14.6667 14.1666 11.6819 14.1666 8.00001C14.1666 4.31811 11.1818 1.33334 7.49992 1.33334C3.81802 1.33334 0.833252 4.31811 0.833252 8.00001C0.833252 11.6819 3.81802 14.6667 7.49992 14.6667Z" stroke="#E9FAFF" stroke-linecap="round" stroke-linejoin="round"/>
+				            <path d="M5.83325 5.9769C5.83325 5.65871 5.83325 5.49961 5.89975 5.4108C5.95769 5.33339 6.04639 5.28497 6.14284 5.27808C6.25351 5.27017 6.38733 5.35621 6.65499 5.52827L9.80205 7.55138C10.0343 7.70069 10.1504 7.77534 10.1905 7.87027C10.2256 7.95321 10.2256 8.04681 10.1905 8.12975C10.1504 8.22468 10.0343 8.29933 9.80205 8.44864L6.65499 10.4718C6.38734 10.6438 6.25351 10.7298 6.14284 10.7219C6.04639 10.7151 5.95769 10.6666 5.89975 10.5892C5.83325 10.5004 5.83325 10.3413 5.83325 10.0231V5.9769Z" stroke="#E9FAFF" stroke-linecap="round" stroke-linejoin="round"/>
+				        </svg>
+				    </span>
+				    
+				</a>
+
+				<a rel="noopener noreferrer" href="#" class="px-8 py-3 text-lg font-semibold border rounded dark:border-gray-800">survey</a>
+			</div>
+      
+        </div>
+        <div class="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+            <%= image_tag "bg-logo.png", class:"object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128" %>
+        </div>
+
+    </div>
+</section>
+
+
+
+             
+
+
+     <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+       <div class="grid gap-10 lg:grid-cols-2">
+         <div class="flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg">
+      
+           <div class="max-w-xl mb-6 dark:text-black" style="font-family: 'Nunito', sans-serif;">
+             <h2 class="max-w-lg mb-6 font-sans text-3xl tracking-tight  sm:text-4xl sm:leading-none" style="font-family: 'Nunito', sans-serif;">
+               About us
+             </h2>
+             <p class="text-base text-black md:text-lg" style="font-family: 'Nunito', sans-serif"; >
+               Reblox facilitates the seamless digitization of real estate assets, allowing for fractional ownership. Investors gain access to a transparent and secure ecosystem, enabling diversified participation in the real estate market. The platform enhances liquidity, promotes global accessibility, and ensures regulatory compliance, providing a cutting-edge solution for modern real estate investment
+             </p>
+           </div>
+           <div>
+             
+           </div>
+         </div>
+         <div class="flex items-center justify-center -mx-4 lg:pl-8">
+           <div class="flex flex-col items-end px-3">
+             
+             <%= image_tag "public/logo-faded.png", class:"object-cover mb-6 rounded shadow-lg h-28 sm:hidden xl:h-56 w-28 sm:hidden xl:w-56" %>
+        
+           </div>
+         
+         </div>
+       </div>
+     </div>
+
+
+<div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20" style="font-family: 'Nunito', sans-serif;">
+
+  <div class="grid gap-8 row-gap-5 lg:grid-cols-3">
+    <div class="relative p-px overflow-hidden transition duration-300 transform border rounded shadow-sm hover:scale-105 group hover:shadow-xl">
+      <div class="absolute bottom-0 left-0 w-full h-1 duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100"></div>
+      <div class="absolute bottom-0 left-0 w-1 h-full duration-300 origin-bottom transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100"></div>
+      <div class="absolute top-0 left-0 w-full h-1 duration-300 origin-right transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100"></div>
+      <div class="absolute bottom-0 right-0 w-1 h-full duration-300 origin-top transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100"></div>
+      <div class="relative p-5 bg-[#e9faff]  rounded-sm">
+        <div class="flex flex-col mb-2 lg:items-center lg:flex-row">
+          <div class="flex items-center justify-center w-10 h-10 mb-4 mr-2 rounded-full bg-indigo-50 lg:mb-0">
+            <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path opacity="0.28" d="M28.4998 5.35168C15.7155 5.35168 5.35168 15.7155 5.35168 28.4998C5.35168 41.2842 15.7155 51.648 28.4998 51.648C41.2842 51.648 51.648 41.2842 51.648 28.4998C51.648 15.7155 41.2842 5.35168 28.4998 5.35168Z" fill="#EFFAFF"/>
+            <path d="M30.1092 19.1982C29.0632 18.8583 27.9364 18.8583 26.8903 19.1982C26.1891 19.426 25.6188 19.8212 25.0939 20.2668C24.5965 20.6891 24.0382 21.2474 23.3911 21.8945L21.8939 23.3917C21.2468 24.0388 20.6885 24.5971 20.2662 25.0945C19.8205 25.6195 19.4254 26.1897 19.1975 26.8909C18.8577 27.937 18.8577 29.0638 19.1975 30.1098C19.4254 30.811 19.8205 31.3813 20.2662 31.9063C20.6885 32.4037 21.2468 32.9619 21.8939 33.609L23.3911 35.1062C24.0382 35.7533 24.5965 36.3116 25.0939 36.7339C25.6188 37.1796 26.1891 37.5748 26.8903 37.8026C27.9364 38.1425 29.0632 38.1425 30.1092 37.8026C30.8104 37.5748 31.3807 37.1796 31.9057 36.7339C32.4031 36.3116 32.9613 35.7534 33.6084 35.1062L35.1056 33.609C35.7527 32.9619 36.311 32.4037 36.7333 31.9063C37.179 31.3813 37.5741 30.811 37.802 30.1098C38.1419 29.0638 38.1419 27.937 37.802 26.8909C37.5741 26.1897 37.179 25.6195 36.7333 25.0945C36.311 24.5971 35.7527 24.0388 35.1056 23.3917L33.6084 21.8945C32.9613 21.2474 32.4031 20.6891 31.9057 20.2668C31.3807 19.8212 30.8104 19.426 30.1092 19.1982Z" fill="#12A00F"/>
+            </svg>
+
+
+
+          </div>
+          
+        </div>
+       
+        <br>
+        <svg width="87" height="16" viewBox="0 0 87 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM86.7071 8.70711C87.0976 8.31658 87.0976 7.68342 86.7071 7.29289L80.3431 0.928932C79.9526 0.538408 79.3195 0.538408 78.9289 0.928932C78.5384 1.31946 78.5384 1.95262 78.9289 2.34315L84.5858 8L78.9289 13.6569C78.5384 14.0474 78.5384 14.6805 78.9289 15.0711C79.3195 15.4616 79.9526 15.4616 80.3431 15.0711L86.7071 8.70711ZM1 9H86V7H1V9Z" fill="#12A00F"/>
+          </svg>
+          <br>
+           <div>
+          <h6 class="font-semibold leading-5"style="font-family: 'Nunito', sans-serif;"> Our Mission</h6>
+
+        </div>
+          <br>
+
+        <p class="mb-2 text-sm text-gray-900"style="font-family: 'Nunito', sans-serif;">
+          To democratize global real estate access and empower individuals to control their financial future. 
+        </p>
+        
+      </div>
+    </div>  
+    <div class="relative p-px overflow-hidden transition duration-300 transform border rounded shadow-sm hover:scale-105 group hover:shadow-xl">
+      <div class="absolute bottom-0 left-0 w-full h-1 duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100"></div>
+      <div class="absolute bottom-0 left-0 w-1 h-full duration-300 origin-bottom transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100"></div>
+      <div class="absolute top-0 left-0 w-full h-1 duration-300 origin-right transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100"></div>
+      <div class="absolute bottom-0 right-0 w-1 h-full duration-300 origin-top transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100"></div>
+      <div class="relative p-5 bg-[#e9faff]  rounded-sm">
+        <div class="flex flex-col mb-2 lg:items-center lg:flex-row">
+          <div class="flex items-center justify-center w-10 h-10 mb-4 mr-2 rounded-full bg-indigo-50 lg:mb-0">
+            <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path opacity="0.28" d="M32.3653 30.4727L34 38.0003C29.7136 35.3361 26.2864 35.3361 22 38.0003L23.6347 30.4727" stroke="#00234C" stroke-width="2.41901" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M27.9999 17.0001C23.5817 17.0001 19.9999 20.5818 19.9999 25.0001C19.9999 29.4183 23.5817 33.0001 27.9999 33.0001C32.4182 33.0001 35.9999 29.4183 35.9999 25.0001C35.9999 20.5818 32.4182 17.0001 27.9999 17.0001Z" fill="#12A00F"/>
+            </svg>
+
+
+
+          </div>
+          
+        </div>
+       
+        <br>
+        <svg width="87" height="16" viewBox="0 0 87 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM86.7071 8.70711C87.0976 8.31658 87.0976 7.68342 86.7071 7.29289L80.3431 0.928932C79.9526 0.538408 79.3195 0.538408 78.9289 0.928932C78.5384 1.31946 78.5384 1.95262 78.9289 2.34315L84.5858 8L78.9289 13.6569C78.5384 14.0474 78.5384 14.6805 78.9289 15.0711C79.3195 15.4616 79.9526 15.4616 80.3431 15.0711L86.7071 8.70711ZM1 9H86V7H1V9Z" fill="#12A00F"/>
+          </svg>
+          <br>
+           <div>
+          <h6 class="font-semibold leading-5" style="font-family: 'Nunito', sans-serif;"> Our Vision</h6>
+
+        </div>
+          <br>
+
+        <p class="mb-2 text-sm text-gray-900">
+          To be the world’s premier leader, offering unparalleled security, accessibility and affordability in fractional investment solutions for real estate assets across the globe.
+        </p>
+        
+      </div>
+    </div>   
+    <div class="relative p-px overflow-hidden transition duration-300 transform border rounded shadow-sm hover:scale-105 group hover:shadow-xl">
+      <div class="absolute bottom-0 left-0 w-full h-1 duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100"></div>
+      <div class="absolute bottom-0 left-0 w-1 h-full duration-300 origin-bottom transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100"></div>
+      <div class="absolute top-0 left-0 w-full h-1 duration-300 origin-right transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100"></div>
+      <div class="absolute bottom-0 right-0 w-1 h-full duration-300 origin-top transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100"></div>
+      <div class="relative p-5 bg-[#e9faff]  rounded-sm">
+        <div class="flex flex-col mb-2 lg:items-center lg:flex-row">
+          <div class="flex items-center justify-center w-10 h-10 mb-4 mr-2 rounded-full bg-indigo-50 lg:mb-0">
+            <svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="37.5" cy="37.5" r="37.5" fill="#E7F3E7"/>
+            <path opacity="0.28" d="M37.4998 14.3517C24.7155 14.3517 14.3517 24.7155 14.3517 37.4998C14.3517 50.2842 24.7155 60.648 37.4998 60.648C50.2842 60.648 60.648 50.2842 60.648 37.4998C60.648 24.7155 50.2842 14.3517 37.4998 14.3517Z" fill="#E9FAFF"/>
+            <path opacity="0.28" d="M35.1742 40.8334H31.3333C27.4213 40.8334 24.25 44.0047 24.25 47.9167C24.25 50.2639 26.1528 52.1667 28.5 52.1667H37.8241C36.2171 50.66 34.1667 48.0766 34.1667 44.5915C34.1667 43.1674 34.5438 41.9021 35.1742 40.8334Z" fill="#00234C"/>
+            <path d="M29.9166 30.9167C29.9166 27.0047 33.0879 23.8334 37 23.8334C40.912 23.8334 44.0833 27.0047 44.0833 30.9167C44.0833 34.8287 40.912 38 37 38C33.0879 38 29.9166 34.8287 29.9166 30.9167Z" fill="#12A00F"/>
+            <path d="M44.0789 40.4679C44.8054 40.0204 45.6211 39.859 46.3699 39.8696C48.7023 39.9024 51.1666 41.754 51.1666 44.5915C51.1666 47.144 49.5037 49.1552 48.0589 50.412C47.3083 51.0649 46.5399 51.5825 45.9102 51.942C45.5958 52.1215 45.301 52.2702 45.0466 52.379C44.9206 52.4329 44.7881 52.4841 44.6578 52.5243C44.5619 52.5538 44.3406 52.6191 44.0833 52.6191C43.826 52.6191 43.6047 52.5538 43.5088 52.5243C43.3785 52.4841 43.246 52.4329 43.12 52.379C42.8656 52.2702 42.5708 52.1215 42.2564 51.942C41.6267 51.5825 40.8583 51.0649 40.1077 50.412C38.6629 49.1552 37 47.144 37 44.5915C37 41.7695 39.4505 39.8694 41.8166 39.8694C42.5346 39.8694 43.3478 40.0236 44.0789 40.4679Z" fill="#12A00F"/>
+            </svg>
+
+
+          </div>
+          
+        </div>
+       
+        <br>
+        <svg width="87" height="16" viewBox="0 0 87 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM86.7071 8.70711C87.0976 8.31658 87.0976 7.68342 86.7071 7.29289L80.3431 0.928932C79.9526 0.538408 79.3195 0.538408 78.9289 0.928932C78.5384 1.31946 78.5384 1.95262 78.9289 2.34315L84.5858 8L78.9289 13.6569C78.5384 14.0474 78.5384 14.6805 78.9289 15.0711C79.3195 15.4616 79.9526 15.4616 80.3431 15.0711L86.7071 8.70711ZM1 9H86V7H1V9Z" fill="#12A00F"/>
+          </svg>
+          <br>
+           <div>
+          <h6 class="font-semibold leading-5"> Our Values</h6>
+
+        </div>
+          <br>
+
+        <p class="mb-2 text-sm text-gray-900">
+          Together we strive to deliver a reliable product and services, foster a resilient team, and cultivate a relatable experience for our customers. 
+        </p>
+        
+      </div>
+    </div>    
+  </div>
+</div>
+
+
+
+<div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20" style="font-family: 'Nunito', sans-serif;">
+  <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+
+    <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+      <span class="relative inline-block">
+        
+        <%= image_tag "public/logo-faded.png", class:"absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block" %>
+        
+        <span class="relative">Introducing Reblox</span>
+      </span>
+      
+    </h2>
+    <p class="text-base text-gray-700 md:text-lg">
+      Unlock the Real Future with Reblox
+    </p>
+  </div>
+  <div class="mx-auto lg:max-w-2xl">
+    <div class="relative rounded-md w-full transition-shadow duration-300 hover:shadow-xl">
+      
+       <iframe class="object-cover w-full h-56 rounded shadow-lg sm:h-64 md:h-80 lg:h-96"
+src="https://www.youtube.com/embed/xGKby6xOc9Y">
+</iframe> 
+  </div>
+</div>
+
+
+
+<div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20" style="font-family: 'Nunito', sans-serif;">
+  <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+
+    <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+      <span class="relative inline-block">
+       
+        <%= image_tag "public/logo-faded.png", class:"absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block" %>
+        <span class="relative">Highlights</span>
+      </span>
+
+    </h2>
+    <p class="text-base text-gray-700 md:text-lg">
+      Features and Benefits
+    </p>
+  </div>
+  <div class="grid gap-5 mb-8 md:grid-cols-2 lg:grid-cols-3">
+    <div class="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
+      <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-indigo-50">
+        <svg width="70" height="69" viewBox="0 0 70 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="35" cy="34.5" r="34.5" fill="#CEF3FF"/>
+        <path d="M43.74 31.7583V27.5815C43.74 26.2843 43.1512 25.7599 41.6884 25.7599H37.9716C36.5088 25.7599 35.92 26.2843 35.92 27.5815V31.7491C35.92 33.0555 36.5088 33.5707 37.9716 33.5707H41.6884C43.1512 33.5799 43.74 33.0555 43.74 31.7583Z" stroke="#595959" stroke-width="1.38" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M43.74 42.1084V38.3916C43.74 36.9288 43.1512 36.34 41.6884 36.34H37.9716C36.5088 36.34 35.92 36.9288 35.92 38.3916V42.1084C35.92 43.5712 36.5088 44.16 37.9716 44.16H41.6884C43.1512 44.16 43.74 43.5712 43.74 42.1084Z" stroke="#595959" stroke-width="1.38" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M33.16 31.7583V27.5815C33.16 26.2843 32.5712 25.7599 31.1084 25.7599H27.3916C25.9288 25.7599 25.34 26.2843 25.34 27.5815V31.7491C25.34 33.0555 25.9288 33.5707 27.3916 33.5707H31.1084C32.5712 33.5799 33.16 33.0555 33.16 31.7583Z" stroke="#595959" stroke-width="1.38" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M33.16 42.1084V38.3916C33.16 36.9288 32.5712 36.34 31.1084 36.34H27.3916C25.9288 36.34 25.34 36.9288 25.34 38.3916V42.1084C25.34 43.5712 25.9288 44.16 27.3916 44.16H31.1084C32.5712 44.16 33.16 43.5712 33.16 42.1084Z" stroke="#595959" stroke-width="1.38" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+
+      </div>
+      <h6 class="mb-2 font-semibold leading-5">Fractional ownership</h6>
+      <p class="text-sm text-gray-900">
+        Split large property investments into smaller, more affordable tokens, opening up real estate investment opportunities to a wider audience and promoting wealth democratization.
+      </p>
+    </div>
+    <div class="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
+      <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-indigo-50">
+        <svg width="70" height="69" viewBox="0 0 70 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="35" cy="34.5" r="34.5" fill="#CEF3FF"/>
+        <path d="M31.52 25.84L26.13 30.04C25.23 30.74 24.5 32.23 24.5 33.36V40.77C24.5 43.09 26.39 44.99 28.71 44.99H40.29C42.61 44.99 44.5 43.09 44.5 40.78V33.5C44.5 32.29 43.69 30.74 42.7 30.05L36.52 25.72C35.12 24.74 32.87 24.79 31.52 25.84Z" stroke="#595959" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M39 34.5L34.8 38.7L33.2 36.3L30 39.5" stroke="#595959" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M37 34.5H39V36.5" stroke="#595959" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+
+      </div>
+      <h6 class="mb-2 font-semibold leading-5">Liquidity boost</h6>
+      <p class="text-sm text-gray-900">
+        Selling property tokens can be faster than selling the whole thing, making it easier to get money when needed.
+      </p>
+    </div>
+    <div class="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
+      <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-indigo-50">
+        <svg width="70" height="69" viewBox="0 0 70 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="35" cy="34.5" r="34.5" fill="#CEF3FF"/>
+        <path d="M28.59 36.28H31.68V43.48C31.68 45.16 32.59 45.5 33.7 44.24L41.27 35.64C42.2 34.59 41.81 33.72 40.4 33.72H37.31V26.52C37.31 24.84 36.4 24.5 35.29 25.76L27.72 34.36C26.8 35.42 27.19 36.28 28.59 36.28Z" stroke="#595959" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+
+      </div>
+      <h6 class="mb-2 font-semibold leading-5">Efficiency</h6>
+      <p class="text-sm text-gray-900">
+        Streamlined property transactions minimize paperwork, offering swift and hassle-free processes, reducing wait times, and cutting intermediary costs.
+      </p>
+    </div>
+    <div class="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
+      <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-indigo-50">
+        <svg width="70" height="69" viewBox="0 0 70 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="35" cy="34.5" r="34.5" fill="#CEF3FF"/>
+        <path d="M43.7566 34.5501V31.1201C43.7566 29.8901 42.8166 28.5301 41.6666 28.1001L36.6766 26.2301C35.8466 25.9201 34.4866 25.9201 33.6566 26.2301L28.6666 28.1101C27.5166 28.5401 26.5766 29.9001 26.5766 31.1201V38.5501C26.5766 39.7301 27.3566 41.2801 28.3066 41.9901L32.6066 45.2001C33.3066 45.7401 34.2366 46.0001 35.1666 46.0001" stroke="#595959" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M39.1666 44C41.3758 44 43.1666 42.2091 43.1666 40C43.1666 37.7909 41.3758 36 39.1666 36C36.9575 36 35.1666 37.7909 35.1666 40C35.1666 42.2091 36.9575 44 39.1666 44Z" stroke="#595959" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M44.1621 45H44.1711" stroke="#595959" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+
+      </div>
+      <h6 class="mb-2 font-semibold leading-5">Security and Transparency</h6>
+      <p class="text-sm text-gray-900">
+        Invest with confidence knowing that Blockchain keeps a clear record of each property's history, making it easy to trust. Real estate deals are safer and more honest, with less risk of cheating.
+      </p>
+    </div>
+    <div class="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
+      <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-indigo-50">
+        <svg width="70" height="69" viewBox="0 0 70 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="35" cy="34.5" r="34.5" fill="#CEF3FF"/>
+        <path d="M40.5 30.16C40.44 30.15 40.37 30.15 40.31 30.16C38.93 30.11 37.83 28.98 37.83 27.58C37.83 26.15 38.98 25 40.41 25C41.84 25 42.99 26.16 42.99 27.58C42.98 28.98 41.88 30.11 40.5 30.16Z" stroke="#595959" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M39.47 37.44C40.84 37.67 42.35 37.43 43.41 36.72C44.82 35.78 44.82 34.24 43.41 33.3C42.34 32.59 40.81 32.35 39.44 32.59" stroke="#595959" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M28.47 30.16C28.53 30.15 28.6 30.15 28.66 30.16C30.04 30.11 31.14 28.98 31.14 27.58C31.14 26.15 29.99 25 28.56 25C27.13 25 25.98 26.16 25.98 27.58C25.99 28.98 27.09 30.11 28.47 30.16Z" stroke="#595959" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M29.5 37.44C28.13 37.67 26.62 37.43 25.56 36.72C24.15 35.78 24.15 34.24 25.56 33.3C26.63 32.59 28.16 32.35 29.53 32.59" stroke="#595959" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M34.5 37.63C34.44 37.62 34.37 37.62 34.31 37.63C32.93 37.58 31.83 36.45 31.83 35.05C31.83 33.62 32.98 32.47 34.41 32.47C35.84 32.47 36.99 33.63 36.99 35.05C36.98 36.45 35.88 37.59 34.5 37.63Z" stroke="#595959" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M31.59 40.78C30.18 41.72 30.18 43.26 31.59 44.2C33.19 45.27 35.81 45.27 37.41 44.2C38.82 43.26 38.82 41.72 37.41 40.78C35.82 39.72 33.19 39.72 31.59 40.78Z" stroke="#595959" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+
+      </div>
+      <h6 class="mb-2 font-semibold leading-5">Accessibility</h6>
+      <p class="text-sm text-gray-900">
+        Now, anyone worldwide has the opportunity to invest in premium properties they couldn't afford before, making the real estate market truly global.
+      </p>
+    </div>
+    <div class="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
+      <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-indigo-50">
+        <svg width="70" height="69" viewBox="0 0 70 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="35" cy="34.5" r="34.5" fill="#CEF3FF"/>
+        <path d="M43.5101 41.5101L38.5601 36.5601" stroke="#595959" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M38.56 36.56L35.02 40.1C34.24 40.88 32.97 40.88 32.19 40.1L27.95 35.86C27.17 35.08 27.17 33.81 27.95 33.03L35.02 25.96C35.8 25.18 37.07 25.18 37.85 25.96L42.09 30.2C42.87 30.98 42.87 32.25 42.09 33.03L38.56 36.56Z" stroke="#595959" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M25.5 44H31.5" stroke="#595959" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M30.0601 30.92L37.1301 37.99" stroke="#595959" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+
+      </div>
+      <h6 class="mb-2 font-semibold leading-5">Decentralized Governance</h6>
+      <p class="text-sm text-gray-900">
+        You have a say in how 'your' real estate assets are managed and governed
+      </p>
+    </div>
+  </div>
+<!--   <div class="text-center">
+    <a
+      href="/"
+      class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+    >
+      Learn more
+    </a>
+  </div> -->
+</div>
+
