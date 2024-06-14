@@ -1,6 +1,6 @@
 <!-- component -->
 <body class="bg-blue-500">
-  <nav class="relative px-4 py-4 flex justify-between items-center bg-cover-custom bg-overlay">
+  <nav class="relative px-4 py-4 flex justify-between items-center bg-cover-custom">
     <a class="text-3xl font-bold leading-none" href="#">
       <%= image_tag "logo-main.png", class:"h-10" %>
     </a>
@@ -20,45 +20,79 @@
   </nav>
   <div class="navbar-menu relative z-50 hidden">
     <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
-    <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
-      <div class="flex items-center mb-8">
-        <a class="mr-auto text-3xl font-bold leading-none" href="#">
-          <svg class="h-12" alt="logo" viewBox="0 0 10240 10240">
-                <path d="M6 7H11C11.2652 7 11.5196 7.10536 11.7071 7.29289C11.8946 7.48043 12 7.73478 12 8C12 8.26522 11.8946 8.51957 11.7071 8.70711C11.5196 8.89464 11.2652 9 11 9H6C5.73478 9 5.48043 8.89464 5.29289 8.70711C5.10536 8.51957 5 8.26522 5 8C5 7.73478 5.10536 7.48043 5.29289 7.29289C5.48043 7.10536 5.73478 7 6 7ZM13 15H18C18.2652 15 18.5196 15.1054 18.7071 15.2929C18.8946 15.4804 19 15.7348 19 16C19 16.2652 18.8946 16.5196 18.7071 16.7071C18.5196 16.8946 18.2652 17 18 17H13C12.7348 17 12.4804 16.8946 12.2929 16.7071C12.1054 16.5196 12 16.2652 12 16C12 15.7348 12.1054 15.4804 12.2929 15.2929C12.4804 15.1054 12.7348 15 13 15ZM6 11H18C18.2652 11 18.5196 11.1054 18.7071 11.2929C18.8946 11.4804 19 11.7348 19 12C19 12.2652 18.8946 12.5196 18.7071 12.7071C18.5196 12.8946 18.2652 13 18 13H6C5.73478 13 5.48043 12.8946 5.29289 12.7071C5.10536 12.5196 5 12.2652 5 12C5 11.7348 5.10536 11.4804 5.29289 11.2929C5.48043 11.1054 5.73478 11 6 11Z" fill="white"/>
-              </svg>
+    <nav class="relative px-4 py-4 flex justify-between items-center bg-cover-custom bg-overlay">
+        <a class="text-3xl font-bold leading-none" href="#">
+          <%= image_tag "logo-main.png", class:"h-10" %>
         </a>
-        <button class="navbar-close">
-          <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-          </svg>
-        </button>
-      </div>
-      <div>
-        <ul>
-          <li class="mb-1">
-            <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">About Us</a>
-          </li>
-          <li class="mb-1">
-            <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Blog</a>
-          </li>
-          <li class="mb-1">
-            <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Contact Us</a>
-          </li>
-         
-        </ul>
-      </div>
-      <div class="mt-auto">
-        <div class="pt-6">
-      
-          <a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-[#0fc3ff] hover:bg-opacity-80  rounded-xl" href="#">Stay in the loop?</a>
+        <div class="lg:hidden">
+          <button class="navbar-burger flex items-center text-white p-3">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 7H11C11.2652 7 11.5196 7.10536 11.7071 7.29289C11.8946 7.48043 12 7.73478 12 8C12 8.26522 11.8946 8.51957 11.7071 8.70711C11.5196 8.89464 11.2652 9 11 9H6C5.73478 9 5.48043 8.89464 5.29289 8.70711C5.10536 8.51957 5 8.26522 5 8C5 7.73478 5.10536 7.48043 5.29289 7.29289C5.48043 7.10536 5.73478 7 6 7ZM13 15H18C18.2652 15 18.5196 15.1054 18.7071 15.2929C18.8946 15.4804 19 15.7348 19 16C19 16.2652 18.8946 16.5196 18.7071 16.7071C18.5196 16.8946 18.2652 17 18 17H13C12.7348 17 12.4804 16.8946 12.2929 16.7071C12.1054 16.5196 12 16.2652 12 16C12 15.7348 12.1054 15.4804 12.2929 15.2929C12.4804 15.1054 12.7348 15 13 15ZM6 11H18C18.2652 11 18.5196 11.1054 18.7071 11.2929C18.8946 11.4804 19 11.7348 19 12C19 12.2652 18.8946 12.5196 18.7071 12.7071C18.5196 12.8946 18.2652 13 18 13H6C5.73478 13 5.48043 12.8946 5.29289 12.7071C5.10536 12.5196 5 12.2652 5 12C5 11.7348 5.10536 11.4804 5.29289 11.2929C5.48043 11.1054 5.73478 11 6 11Z" fill="white"/>
+            </svg>
+          </button>
         </div>
-        <p class="my-4 text-xs text-center text-gray-400">
-          <span>Copyright © Reblox 2024</span>
-        </p>
-      </div>
-    </nav>
+        <ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
+          <li><%= link_to 'About Us', root_path, class:'text-sm text-white hover:text-gray-300' %></li>
+          <li><%= link_to 'Blog', root_path, class:'text-sm text-white hover:text-gray-300' %></li>
+          <li><%= link_to 'Contact Us', root_path, class:'text-sm text-white hover:text-gray-300' %></li>
+        </ul>
+        <a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-[#0fc3ff] text-white hover:bg-opacity-80 text-sm font-bold rounded-xl transition duration-200" href="#">Stay in the Loop?</a>
+      </nav>
+      <div class="navbar-menu relative z-50 hidden">
+        <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+        <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+          <div class="flex items-center mb-8">
+            <a class="mr-auto text-3xl font-bold leading-none" href="#">
+              <svg class="h-12" alt="logo" viewBox="0 0 10240 10240">
+                    <path d="M6 7H11C11.2652 7 11.5196 7.10536 11.7071 7.29289C11.8946 7.48043 12 7.73478 12 8C12 8.26522 11.8946 8.51957 11.7071 8.70711C11.5196 8.89464 11.2652 9 11 9H6C5.73478 9 5.48043 8.89464 5.29289 8.70711C5.10536 8.51957 5 8.26522 5 8C5 7.73478 5.10536 7.48043 5.29289 7.29289C5.48043 7.10536 5.73478 7 6 7ZM13 15H18C18.2652 15 18.5196 15.1054 18.7071 15.2929C18.8946 15.4804 19 15.7348 19 16C19 16.2652 18.8946 16.5196 18.7071 16.7071C18.5196 16.8946 18.2652 17 18 17H13C12.7348 17 12.4804 16.8946 12.2929 16.7071C12.1054 16.5196 12 16.2652 12 16C12 15.7348 12.1054 15.4804 12.2929 15.2929C12.4804 15.1054 12.7348 15 13 15ZM6 11H18C18.2652 11 18.5196 11.1054 18.7071 11.2929C18.8946 11.4804 19 11.7348 19 12C19 12.2652 18.8946 12.5196 18.7071 12.7071C18.5196 12.8946 18.2652 13 18 13H6C5.73478 13 5.48043 12.8946 5.29289 12.7071C5.10536 12.5196 5 12.2652 5 12C5 11.7348 5.10536 11.4804 5.29289 11.2929C5.48043 11.1054 5.73478 11 6 11Z" fill="white"/>
+                  </svg>
+            </a>
+            <button class="navbar-close">
+              <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+            </button>
+          </div>
+          <div>
+            <ul>
+              <li class="mb-1">
+                <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">About Us</a>
+              </li>
+              <li class="mb-1">
+                <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Blog</a>
+              </li>
+              <li class="mb-1">
+                <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-auto">
+            <div class="pt-6">
+              <a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-[#0fc3ff] hover:bg-opacity-80 rounded-xl" href="#">Stay in the loop?</a>
+            </div>
+            <p class="my-4 text-xs text-center text-gray-400">
+              <span>Copyright © Reblox 2024</span>
+            </p>
+          </div>
+        </nav>
   </div>
 </body>
+
+
+
+<style>
+    body {
+      font-family: 'Nunito', sans-serif;
+    }
+    .bg-cover-custom {
+      background-image: url('<%= asset_path('nav-bg.png') %>'); /* Ensure the path is correct */
+      background-size: cover;
+      background-position: center;
+    }
+    .bg-overlay {
+      background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    }
+  </style>
 
 <script>
 // Burger menus
@@ -102,18 +136,3 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 </script>
-
-
-  <style>
-    body {
-      font-family: 'Nunito', sans-serif;
-    }
-    .bg-cover-custom {
-      background-image: url('<%= asset_path('nav-bg.png') %>'); /* Replace with your image URL */
-      background-size: cover;
-      background-position: center;
-    }
-    .bg-overlay {
-      background: rgba(0, 0, 0, 0.5); /* Dark overlay */
-    }
-  </style>
