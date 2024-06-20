@@ -1,101 +1,125 @@
-      <footer class="footer">
-        <img
-          class="reblox-patterns-1"
-          alt=""
-          src="./public/reblox-patterns-1@2x.png"
-        />
+    <style>
+        .back-to-top {
+            display: none;
+        }
+        .back-to-top.show {
+            display: block;
+        }
+        .foot {
+          font-family: 'Nunito', sans-serif;
+        }
+        .bg-cover-custom2 {
+          background-image: url('<%= asset_path('footer.png') %>');
+          background-size: cover;
+          background-position: center;
+        }
+    </style>
 
-        <div class="footer-content">
-          <div class="footer-left-parent">
-            <div class="footer-left">
-              <img
-                class="logo-in-png5"
-                alt=""
-                src="./public/logo-in-png@2x.png"
-              />
-            </div>
-            <div class="footer-right">
-              <div class="input10">
-                <div class="full-name5">Full Name</div>
-                <div class="input11">
-                  <input
-                    class="adewale"
-                    placeholder="Email Address "
-                    type="text"
-                  />
-                </div>
-              </div>
-              <button class="button13">
-                <b class="stay-in-the6">Stay in the Loop</b>
-                <img class="icon5" alt="" src="./public/icon.svg" />
-              </button>
-            </div>
-          </div>
-          <div class="footer-bottom">
-            <div class="copyright-reblox-wrapper">
-              <b class="copyright-reblox">© Copyright Reblox 2024</b>
-            </div>
-            <b class="privacy-policy-and-container">
-              <span class="privacy-policy"> <%= link_to '>Privacy Policy', base_contact_path %></span>
-
-              <span class="and"> and </span>
-              <span class="terms-of-service"><%= link_to 'Terms of Service', base_contact_path %></span>
-            </b>
-          </div>
-        </div>
-        <div class="column-wrapper">
-          <div class="column">
-            <b class="heading6">Links</b>
-            <div class="footer-links">
-              <div class="link">
+<!-- Footer -->
+<footer id="foot" class="bg-[#064283] text-white py-10 relative bg-cover-custom2">
+    <div class="container mx-auto px-4 md:flex md:justify-between md:items-start">
+        <!-- Left Section -->
+        <div class="mb-8 md:mb-0 md:w-1/2">
+            <div class="flex flex-col items-start">
+                <!-- Logo -->
+                <a class="text-3xl font-bold leading-none" href="#">
+                  <%= image_tag "logo-main.png", class:"w-40 h-auto mb-4" %>
+                </a>
                
-                <%= link_to 'Contact Us', base_contact_path, class: 'link1' %>
-              </div>
-              <div class="link2">
-                
-                <%= link_to 'Blog', root_path, class: 'link3' %>
-              </div>
-              <div class="link4">
-                
-                <%= link_to 'Contact Us', base_contact_path, class: 'link5' %>
-              </div>
+                <!-- Input Field and Button -->
+                <div class="w-full flex flex-col sm:flex-row gap-2">
+                    
+                    <button class="bg-cyan-500 text-blue-900 px-4 py-2 rounded-lg font-bold w-full sm:w-auto">Stay in the Loop?</button>
+                </div>
             </div>
-          </div>
         </div>
-        <div class="column-container">
-          <div class="column1">
-            <b class="heading7">Follow Us</b>
-            <div class="social-links">
-              <div class="link6">
-                <div class="social-link-icon">
-                
-                <%= image_tag "public/brandfacebook.svg", class:"brand-facebook-icon" %>
+        
+        <!-- Right Section -->
+        <div class="md:w-1/2">
+            <div class="flex flex-wrap justify-between ml-4 md:ml-12">
+                <!-- Links Section -->
+                <div class="mb-8 md:mb-0 md:w-1/2">
+                    <h2 class="font-semibold text-lg mb-4">Links</h2>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:underline">About</a></li>
+                        <li><a href="#" class="hover:underline">Contact</a></li>
+                        <li><a href="#" class="hover:underline">Blog</a></li>
+                    </ul>
                 </div>
-                 <a href="https://instagram.com/reblox" class="facebook">Facebook</a>
-              </div>
-              <div class="link7">
-                <div class="brand-instagram-wrapper">
-                
-                 <%= image_tag "public/brandinstagram.svg", class:"brand-instagram-icon" %>
+
+                <!-- Follow Us Section -->
+                <div class="md:w-1/2">
+                    <h2 class="font-semibold text-lg mb-4">Follow Us</h2>
+                    <ul class="space-y-2">
+                        <li class="flex items-center gap-2">
+                            <div class="bg-white p-1 rounded-full">
+                                <svg class="w-4 h-4 fill-current text-blue-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M10 20v-6h2v-2h-2v-2c0-.552.449-1 1-1h1v-2h-1c-1.657 0-3 1.343-3 3v2h-2v2h2v6h2z"/>
+                                </svg>
+                            </div>
+                            <a href="#" class="hover:underline">Facebook</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <div class="bg-white p-1 rounded-full">
+                                <svg class="w-4 h-4 fill-current text-blue-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.849.071 1.366.062 2.633.334 3.608 1.308.975.975 1.246 2.242 1.308 3.608.059 1.265.071 1.645.071 4.849s-.012 3.584-.071 4.849c-.062 1.366-.334 2.633-1.308 3.608-.975.975-2.242 1.246-3.608 1.308-1.265.059-1.645.071-4.849.071s-3.584-.012-4.849-.071c-1.366-.062-2.633-.334-3.608-1.308-.975-.975-1.246-2.242-1.308-3.608-.059-1.265-.071-1.645-.071-4.849s.012-3.584.071-4.849c.062-1.366.334-2.633 1.308-3.608.975-.975 2.242-1.246 3.608-1.308 1.265-.059 1.645-.071 4.849-.071zm0-2.163c-3.257 0-3.67.012-4.947.071-1.403.062-2.677.335-3.765 1.423-1.088 1.088-1.361 2.362-1.423 3.765-.059 1.277-.071 1.69-.071 4.947s.012 3.67.071 4.947c.062 1.403.335 2.677 1.423 3.765 1.088 1.088 2.362 1.361 3.765 1.423 1.277.059 1.69.071 4.947.071s3.67-.012 4.947-.071c1.403-.062 2.677-.335 3.765-1.423 1.088-1.088 1.361-2.362 1.423-3.765.059-1.277.071-1.69.071-4.947s-.012-3.67-.071-4.947c-.062-1.403-.335-2.677-1.423-3.765-1.088-1.088-2.362-1.361-3.765-1.423-1.277-.059-1.69-.071-4.947-.071z"/>
+                                    <path d="M12 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.324c-2.292 0-4.162-1.87-4.162-4.162s1.87-4.162 4.162-4.162 4.162 1.87 4.162 4.162-1.87 4.162-4.162 4.162zm6.406-10.845c-.796 0-1.441-.645-1.441-1.441s.645-1.441 1.441-1.441 1.441.645 1.441 1.441-.645 1.441-1.441 1.441z"/>
+                                </svg>
+                            </div>
+                            <a href="#" class="hover:underline">Instagram</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <div class="bg-white p-1 rounded-full">
+                                <svg class="w-4 h-4 fill-current text-blue-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M23.954 4.569c-.885.389-1.83.654-2.825.774 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.897-.956-2.178-1.555-3.594-1.555-2.717 0-4.917 2.201-4.917 4.917 0 .39.045.765.13 1.124-4.083-.205-7.699-2.159-10.125-5.134-.423.729-.666 1.575-.666 2.476 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.229-.616v.061c0 2.386 1.697 4.374 3.946 4.827-.413.112-.849.171-1.296.171-.316 0-.624-.031-.927-.089.631 1.953 2.445 3.377 4.6 3.415-1.68 1.319-3.808 2.106-6.114 2.106-.397 0-.788-.023-1.175-.068 2.179 1.396 4.768 2.211 7.557 2.211 9.054 0 14.004-7.496 14.004-13.986 0-.21-.005-.42-.014-.63.961-.695 1.8-1.56 2.462-2.548l-.047-.02z"/>
+                                </svg>
+                            </div>
+                            <a href="#" class="hover:underline">Twitter</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <div class="bg-white p-1 rounded-full">
+                                
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.33366 7.33329V10.6666M5.33366 5.33329V5.33996M8.00033 10.6666V7.33329M10.667 10.6666V8.66663C10.667 8.313 10.5265 7.97387 10.2765 7.72382C10.0264 7.47377 9.68728 7.33329 9.33366 7.33329C8.98004 7.33329 8.6409 7.47377 8.39085 7.72382C8.1408 7.97387 8.00033 8.313 8.00033 8.66663M2.66699 3.99996C2.66699 3.64634 2.80747 3.3072 3.05752 3.05715C3.30756 2.8071 3.6467 2.66663 4.00033 2.66663H12.0003C12.3539 2.66663 12.6931 2.8071 12.9431 3.05715C13.1932 3.3072 13.3337 3.64634 13.3337 3.99996V12C13.3337 12.3536 13.1932 12.6927 12.9431 12.9428C12.6931 13.1928 12.3539 13.3333 12.0003 13.3333H4.00033C3.6467 13.3333 3.30756 13.1928 3.05752 12.9428C2.80747 12.6927 2.66699 12.3536 2.66699 12V3.99996Z" stroke="#393939" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+
+                            </div>
+                            <a href="#" class="hover:underline">LinkedIn</a>
+                        </li>
+                    </ul>
                 </div>
-                 <a href="https://instagram.com/reblox" class="instagram">Instagram</a>
-              </div>
-              <div class="link8">
-                <div class="brand-twitter-wrapper">
-                
-                  <%= image_tag "public/brandtwitter.svg", class:"brand-twitter-icon" %>
-                </div>
-                 <a href="https://twitter.com/reblox" class="twitter">Twitter</a>
-              </div>
-              <div class="link9">
-                <div class="brand-linkedin-wrapper">
-                 
-<%= image_tag "public/brandlinkedin.svg", class:"brand-linkedin-icon" %>
-                </div>
-                
-                <a href="https://linkedin.com/reblox" class="linkedin">LinkedIn</a>
-              </div>
             </div>
-          </div>
         </div>
-      </footer>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="container mx-auto px-4 mt-8 flex flex-col md:flex-row justify-between items-center text-sm space-y-4 md:space-y-0 relative">
+        <div class="text-left flex flex-col md:flex-row gap-4 md:gap-2">
+            <div>
+                © Copyright Reblox
+            </div>
+            <div>
+                <a href="#" class="hover:underline">Privacy Policy</a> and <a href="#" class="hover:underline">Terms of Service</a>
+            </div>
+        </div>
+        <button id="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" class="hidden fixed bottom-8 right-8 bg-cyan-500 text-blue-900 p-4 rounded-full">
+            <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M12 2l7 7-1.414 1.414L13 6.828V20h-2V6.828L6.414 10.414 5 9l7-7z"/>
+            </svg>
+        </button>
+    </div>
+</footer>
+
+<script>
+    const backToTopButton = document.getElementById('back-to-top');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 100) {
+            backToTopButton.classList.remove('hidden');
+        } else {
+            backToTopButton.classList.add('hidden');
+        }
+    });
+</script>
+
+</body>

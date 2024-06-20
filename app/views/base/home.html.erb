@@ -1,6 +1,6 @@
-<div>
-  <%= render 'layouts/nav' %>
-</div>
+<div id="main" >
+ <%= render 'layouts/nav' %>
+</div> 
 <section class="dark:bg-[#00234c] dark:text-white" style="font-family: 'Nunito', sans-serif;">
     <div class="container flex flex-col-reverse lg:flex-row justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:justify-between">
         <div class="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
@@ -11,26 +11,24 @@
                 
             </p>
 
-            	<button class="mx-auto flex  items-center justify-center rounded-full">
-  <div
-    class="relative z-10 flex w-full cursor-pointer items-center overflow-hidden rounded-full border border-slate-800 p-[1.5px]"
-  >
-    <div
-      class="animate-rotate absolute inset-0 h-full w-full rounded-full bg-[conic-gradient(#0ea5e9_20deg,transparent_120deg)]"
-    ></div>
-    <div class="relative z-20 flex w-full rounded-[0.60rem] bg-[#00234c] p-2">
-      <span
-        class="relative z-50 block rounded-lg border border-[#00234c] bg-[#00234c] px-8 py-3 text-center text-sm text-white shadow-2xl transition duration-200 hover:bg-opacity-80"
-      >
-        Watch Intro 
-      </span>
-
-    </div>
-  </div>
-</button>
+            <button class="mx-auto flex items-left justify-start rounded-full">
+              <div class="relative z-10 flex w-full cursor-pointer items-center overflow-hidden rounded-full border border-[#00234c] p-[1.5px]">
+                <div class="animate-rotate absolute inset-0 h-full w-full rounded-full bg-[conic-gradient(#0ea5e9_20deg,transparent_120deg)]"></div>
+                <a href="#target-section">
+                  <div class="relative z-20 flex w-full rounded-full bg-[#00234c] p-2">
+                    <span class="relative z-50 flex items-center justify-center rounded-lg border border-[#00234c] bg-[#00234c] px-8 py-3 text-center text-sm text-white shadow-2xl transition duration-200 hover:bg-opacity-80">
+                      Watch Intro
+                      <svg class="ml-2 h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M5.83325 5.9769C5.83325 5.65871 5.83325 5.49961 5.89975 5.4108C5.95769 5.33339 6.04639 5.28497 6.14284 5.27808C6.25351 5.27017 6.38733 5.35621 6.65499 5.52827L9.80205 7.55138C10.0343 7.70069 10.1504 7.77534 10.1905 7.87027C10.2256 7.95321 10.2256 8.04681 10.1905 8.12975C10.1504 8.22468 10.0343 8.29933 9.80205 8.44864L6.65499 10.4718C6.38734 10.6438 6.25351 10.7298 6.14284 10.7219C6.04639 10.7151 5.95769 10.6666 5.89975 10.5892C5.83325 10.5004 5.83325 10.3413 5.83325 10.0231V5.9769Z" stroke="#E9FAFF" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
 
 
-      
+                    </span>
+                  </div>
+                </a>
+              </div>
+            </button>
+
         </div>
         <div class="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
             <%= image_tag "bg-logo.png", class:"object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128" %>
@@ -38,14 +36,6 @@
 
     </div>
 </section>
-
-
-
-             
-
-
-
-
 
 
 <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20" style="font-family: 'Nunito', sans-serif;">
@@ -64,6 +54,7 @@
          </div>
   
        </div>
+ 
   <div class="grid gap-8 row-gap-5 lg:grid-cols-3">
     <div class="relative p-px overflow-hidden transition duration-300 transform border rounded-lg shadow-sm hover:scale-105 group hover:shadow-xl hover:bg-[#00234c] hover:text-white">
       <div class="absolute bottom-0 left-0 w-full h-1 duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100"></div>
@@ -178,6 +169,7 @@
       </div>
     </div>    
   </div>
+   </div>
 </div>
 
 
@@ -194,11 +186,11 @@
       </span>
       
     </h2>
-    <p class="text-base text-[#04344d] md:text-lg" style="font-family: 'Nunito', sans-serif;">
+    <p id="target-section" class="text-base text-[#04344d] md:text-lg" style="font-family: 'Nunito', sans-serif;">
       Unlock the Real Future with Reblox
     </p>
   </div>
-  <div class="mx-auto lg:max-w-2xl">
+  <div  class="mx-auto lg:max-w-2xl">
     <div class="relative rounded-md w-full transition-shadow duration-300 hover:shadow-xl">
       
        <iframe class="object-cover w-full h-56 rounded-lg shadow-lg sm:h-64 md:h-80 lg:h-96"
@@ -207,7 +199,7 @@
   </div>
 </div>
 
-
+</div>
 
 <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20" style="font-family: 'Nunito', sans-serif;">
   <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
@@ -329,6 +321,7 @@
   </div> -->
 </div>
 <!-- success -->
+
 <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20" style="font-family: 'Nunito', sans-serif;">
   <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
 
@@ -466,11 +459,12 @@
       </div>
     </div>
   </div>
+</div>
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<!-- accord -->
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<!-- accord
- --><div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20" style="font-family: 'Nunito', sans-serif;">
+<div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20" style="font-family: 'Nunito', sans-serif;">
   <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
 
     <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-[#04344d] sm:text-4xl md:mx-auto" style="font-family: 'Nunito', sans-serif;">
@@ -488,7 +482,9 @@
   </div>
   <div class="w-full mx-auto lg:w-2xl">
     <div class="w-full divide-y divide-slate-300 text-black dark:divide-slate-700 dark:text-black">
-        <div x-data="{ isExpanded: false }">
+        <div x-data="{ isExpanded: false }"
+        x-on:mouseover="isExpanded = true"
+        x-on:mouseleave="isExpanded = false">
             <button id="controlsAccordionItemOne" type="button" class="flex w-full items-center justify-between gap-4 py-4 text-left underline-offset-2 focus-visible:underline focus-visible:outline-none" aria-controls="accordionItemOne" @click="isExpanded = ! isExpanded" :class="isExpanded ? 'text-onSurfaceStrong dark:text-onSurfaceDarkStrong font-bold text-2xl'  : 'text-onSurface dark:text-onSurfaceDark text-2xl '" :aria-expanded="isExpanded ? 'true' : 'false'"> 
                 1. Risk associated with regulatory uncertainties
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke="#036701" class="size-5 shrink-0 transition" aria-hidden="true" :class="isExpanded  ?  'rotate-180'  :  ''">
@@ -504,7 +500,7 @@
                
                         </div>
                         <span class="text-[24px] text-[#0fc3ff]">We conduct thorough legal due diligence for each property to ensure compliance and minimize legal risks, engaging with regulators to establish clear legal frameworks, and collaborating with industry stakeholders to address common challenges, staying updated on regulatory changes, diversifying property jurisdictions, and provide hybrid models with traditional financing options to  provide flexibility and enhance investor confidence</span></div></div>
-<br>
+                        <br>
 
                         <div class="flex flex-col gap-6 self-stretch">
                           <div class="flex gap-6 self-stretch">
@@ -519,7 +515,9 @@
             </div>
         </div>
 
-        <div x-data="{ isExpanded: false }">
+        <div x-data="{ isExpanded: false }"
+        x-on:mouseover="isExpanded = true"
+        x-on:mouseleave="isExpanded = false">
             <button id="controlsAccordionItemOne" type="button" class="flex w-full items-center justify-between gap-4 py-4 text-left underline-offset-2 focus-visible:underline focus-visible:outline-none" aria-controls="accordionItemOne" @click="isExpanded = ! isExpanded" :class="isExpanded ? 'text-onSurfaceStrong dark:text-onSurfaceDarkStrong font-bold text-2xl'  : 'text-onSurface dark:text-onSurfaceDark text-2xl '" :aria-expanded="isExpanded ? 'true' : 'false'"> 
                 2. Market volatility impacting token values
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke="#036701" class="size-5 shrink-0 transition" aria-hidden="true" :class="isExpanded  ?  'rotate-180'  :  ''">
@@ -535,7 +533,7 @@
 
                         </div>
                         <span class="text-[24px] text-[#0fc3ff]">We provide real time market data, communicating clear exit strategies, and stablecoin or asset-backed tokenization options to our investors. Maintain transparent communication with investors, providing regular updates and clear information on token performance.</span></div></div>
-<br>
+                    <br>
         
                         <div class="flex flex-col gap-6 self-stretch">
                           <div class="flex gap-6 self-stretch">
@@ -550,7 +548,9 @@
             </div>
         </div>
 
-        <div x-data="{ isExpanded: false }">
+        <div x-data="{ isExpanded: false }"
+        x-on:mouseover="isExpanded = true"
+        x-on:mouseleave="isExpanded = false">
             <button id="controlsAccordionItemOne" type="button" class="flex w-full items-center justify-between gap-4 py-4 text-left underline-offset-2 focus-visible:underline focus-visible:outline-none" aria-controls="accordionItemOne" @click="isExpanded = ! isExpanded" :class="isExpanded ? 'text-onSurfaceStrong dark:text-onSurfaceDarkStrong font-bold text-2xl'  : 'text-onSurface dark:text-onSurfaceDark text-2xl '" :aria-expanded="isExpanded ? 'true' : 'false'"> 
                 3. Smart contract vulnerabilities
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke="#036701" class="size-5 shrink-0 transition" aria-hidden="true" :class="isExpanded  ?  'rotate-180'  :  ''">
@@ -572,7 +572,9 @@
             </div>
         </div>
 
-                <div x-data="{ isExpanded: false }">
+        <div x-data="{ isExpanded: false }"
+        x-on:mouseover="isExpanded = true"
+        x-on:mouseleave="isExpanded = false">
             <button id="controlsAccordionItemOne" type="button" class="flex w-full items-center justify-between gap-4 py-4 text-left underline-offset-2 focus-visible:underline focus-visible:outline-none" aria-controls="accordionItemOne" @click="isExpanded = ! isExpanded" :class="isExpanded ? 'text-onSurfaceStrong dark:text-onSurfaceDarkStrong font-bold text-2xl'  : 'text-onSurface dark:text-onSurfaceDark text-2xl '" :aria-expanded="isExpanded ? 'true' : 'false'"> 
                 4. Potential security breaches that may compromise the digital representation of real assets
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke="#036701" class="size-5 shrink-0 transition" aria-hidden="true" :class="isExpanded  ?  'rotate-180'  :  ''">
@@ -594,7 +596,9 @@
             </div>
         </div>
 
-                <div x-data="{ isExpanded: false }">
+        <div x-data="{ isExpanded: false }"
+        x-on:mouseover="isExpanded = true"
+        x-on:mouseleave="isExpanded = false">
             <button id="controlsAccordionItemOne" type="button" class="flex w-full items-center justify-between gap-4 py-4 text-left underline-offset-2 focus-visible:underline focus-visible:outline-none" aria-controls="accordionItemOne" @click="isExpanded = ! isExpanded" :class="isExpanded ? 'text-onSurfaceStrong dark:text-onSurfaceDarkStrong font-bold text-2xl'  : 'text-onSurface dark:text-onSurfaceDark text-2xl '" :aria-expanded="isExpanded ? 'true' : 'false'"> 
                 5. Issues related to liquidity and adoption 
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke="#036701" class="size-5 shrink-0 transition" aria-hidden="true" :class="isExpanded  ?  'rotate-180'  :  ''">
@@ -609,72 +613,153 @@
                         <div class="flex justify-center gap-[5px] self-stretch bg-[#0fc3ff] p-2.5 rounded-2xl">
     
                         </div>
-                        <span class="text-[24px] text-[#0fc3ff]">We foster liquidity through secondary trading platforms and Liquidity pools. We continue to incentivize adoption through education and awareness campaigns.</span></div></div>
-
-
-
+                        <span class="text-[24px] text-[#0fc3ff]">We foster liquidity through secondary trading platforms and Liquidity pools. We continue to incentivize adoption through education and awareness campaigns.</span>
+                      </div>
+                    </div>
                 </div>
             </div>
         </div>
    
 
+    </div>
+    </div>
+    <br>    <br>    <br>
+    <%= render 'layouts/loop' %>
 </div>
 
-  <style>
-      .slide {
-        opacity: 0;
-        transition: opacity 0.5s ease-in-out;
-      }
-      .slide:not(.hidden) {
-        opacity: 1;
-      }
-      .carousel-nav {
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;  /* Firefox */
-      }
-      .carousel-nav::-webkit-scrollbar {
-        display: none;  /* Safari and Chrome */
-      }
-      .carousel-nav a {
-        white-space: nowrap;
-      }
-      .carousel-nav a.active {
-        font-weight: bold;
-      }
+
+
+
+<%= render 'layouts/blog' %>
+
+<div></div>
+<%= render 'layouts/contact' %>
+
+<%= render 'layouts/footer' %>
+
+    <style>
+        .floating-toast {
+            position: fixed;
+            top:75%;
+            right: 20px; /* Adjust distance from right edge */
+            transform: translateY(-50%);
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+            padding: 10px 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 250px;
+        }
+
+        .floating-toast:hover {
+            background-color: rgba(255, 255, 255, 0.95); /* Darker on hover */
+        }
+
+        .toast-content {
+            flex: 1;
+            margin-right: 10px;
+        }
+
+        .toast-text {
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 16px;
+            color: #065374;
+        }
+
+        .arrow-icon {
+            width: 20px;
+            height: 20px;
+        }
+
+        .arrow-icon svg {
+            width: 100%;
+            height: 100%;
+            fill: #065374;
+            transition: fill 0.3s ease;
+        }
+
+        .floating-toast:hover .arrow-icon svg {
+            fill: #00234c; /* Darker color on hover */
+        }
     </style>
 
 
+<div class="floating-toast" onclick="window.location.href = '/surveys/new';">
+    <div class="toast-content">
+        <div class="toast-text">Will you take a survey to help us serve you better and improve our website</div>
+    </div>
+    <div class="arrow-icon">
+        <svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16 14C16 13.258 16.733 12.15 17.475 11.22C18.429 10.02 19.569 8.973 20.876 8.174C21.856 7.575 23.044 7 24 7M24 7C23.044 7 21.855 6.425 20.876 5.826C19.569 5.026 18.429 3.979 17.475 2.781C16.733 1.85 16 0.74 16 0M24 7L0 7" stroke="#065374"/>
+        </svg>
+
+    </div>
+</div>
+
+</body>
+</html>
 
 
-  <script>
-    document.querySelectorAll('.carousel-nav a').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href').substring(1);
+<style>
+    .slide {
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+    }
+    .slide:not(.hidden) {
+      opacity: 1;
+    }
+    .carousel-nav {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+    }
+    .carousel-nav::-webkit-scrollbar {
+      display: none;  /* Safari and Chrome */
+    }
+    .carousel-nav a {
+      white-space: nowrap;
+    }
+    .carousel-nav a.active {
+      font-weight: bold;
+    }
+</style>
 
-        document.querySelectorAll('.carousel-nav a').forEach(a => a.classList.remove('active'));
-        this.classList.add('active');
 
-        document.querySelectorAll('.slide').forEach(slide => {
-          if (slide.id === targetId) {
-            slide.classList.remove('hidden');
-            setTimeout(() => {
-              slide.classList.remove('opacity-0');
-            }, 10); // Slight delay to trigger the transition
-          } else {
-            slide.classList.add('opacity-0');
-            setTimeout(() => {
-              slide.classList.add('hidden');
-            }, 500); // Ensure this matches the transition duration
-          }
-        });
+
+
+<script>
+  document.querySelectorAll('.carousel-nav a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href').substring(1);
+
+      document.querySelectorAll('.carousel-nav a').forEach(a => a.classList.remove('active'));
+      this.classList.add('active');
+
+      document.querySelectorAll('.slide').forEach(slide => {
+        if (slide.id === targetId) {
+          slide.classList.remove('hidden');
+          setTimeout(() => {
+            slide.classList.remove('opacity-0');
+          }, 10); // Slight delay to trigger the transition
+        } else {
+          slide.classList.add('opacity-0');
+          setTimeout(() => {
+            slide.classList.add('hidden');
+          }, 500); // Ensure this matches the transition duration
+        }
       });
     });
+  });
 
-    // Initialize the first slide as visible and set the first link as active
-    const firstSlide = document.getElementById('slide1');
-    firstSlide.classList.remove('hidden');
-    firstSlide.classList.remove('opacity-0');
+  // Initialize the first slide as visible and set the first link as active
+  const firstSlide = document.getElementById('slide1');
+  firstSlide.classList.remove('hidden');
+  firstSlide.classList.remove('opacity-0');
 
-    document.querySelector('.carousel-nav a[href="#slide1"]').classList.add('active');
-  </script>
+  document.querySelector('.carousel-nav a[href="#slide1"]').classList.add('active');
+</script>
+

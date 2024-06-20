@@ -1,0 +1,197 @@
+ <style>
+       body {
+           margin: 0;
+           font-family: Arial, sans-serif;
+       }
+
+       .blog-container {
+           display: flex;
+           flex-direction: column;
+           gap: 2.5rem;
+           padding: 50px 65px;
+       }
+
+       .blog-header {
+           display: flex;
+           flex-direction: column;
+           gap: 1rem;
+           align-items: center;
+       }
+
+       .blog-header .blog-title {
+           font-weight: bold;
+           font-size: 48px;
+           color: black;
+       }
+
+       .blog-header .blog-subtitle {
+           font-weight: normal;
+           font-size: 16px;
+           color: black;
+       }
+
+       .blog-list {
+           display: flex;
+           flex-direction: column;
+           gap: 4rem;
+       }
+
+       .blog-item {
+           display: flex;
+           flex-direction: column;
+           gap: 1.5rem;
+           flex: 1;
+       }
+
+       .blog-item img {
+           height: 300px;
+           width: 100%;
+           object-fit: cover;
+           border-radius: 8px;
+       }
+
+       .blog-details {
+           display: flex;
+           flex-direction: column;
+           gap: 1rem;
+       }
+
+       .blog-meta {
+           display: flex;
+           align-items: center;
+           gap: 1rem;
+       }
+
+       .blog-meta .blog-category {
+           background-color: #def4ff;
+           padding: 0.5rem 1rem;
+           border-radius: 0.5rem;
+           font-weight: bold;
+           font-size: 14px;
+           color: black;
+       }
+
+       .blog-meta .blog-read-time {
+           font-weight: bold;
+           font-size: 14px;
+           color: black;
+       }
+
+       .blog-title {
+           font-weight: bold;
+           font-size: 24px;
+           color: #0095d4;
+       }
+
+       .blog-excerpt {
+           font-size: 16px;
+           color: black;
+       }
+
+       .blog-read-more {
+           display: flex;
+           align-items: center;
+           gap: 0.5rem;
+           font-size: 16px;
+           color: #0095d4;
+           cursor: pointer;
+       }
+
+       @media (min-width: 768px) {
+           .blog-list {
+               flex-direction: row;
+               flex-wrap: wrap;
+           }
+
+           .blog-item {
+               max-width: 30%;
+               margin: 0 1rem;
+           }
+       }
+
+       @media (max-width: 767px) {
+           .blog-header .blog-title {
+               font-size: 36px;
+           }
+
+           .blog-header .blog-subtitle {
+               font-size: 14px;
+           }
+       }
+
+       @media (max-width: 480px) {
+           .blog-header .blog-title {
+               font-size: 28px;
+           }
+
+           .blog-header .blog-subtitle {
+               font-size: 12px;
+           }
+       }
+
+      </style>
+
+      <body>
+
+      <div class="blog-container">
+          <div class="blog-header">
+              <span class="blog-title">Blog</span>
+              <span class="blog-subtitle">Discover</span>
+          </div>
+          <div class="blog-list">
+              <div class="blog-item">
+                  <img src="https://via.placeholder.com/300" alt="Sample Image 1">
+                  <div class="blog-details">
+                      <div class="blog-meta">
+                          <div class="blog-category">Category</div>
+                          <span class="blog-read-time">5 min read</span>
+                      </div>
+                      <div class="blog-title">What is Real Estate Tokenization</div>
+                      <div class="blog-excerpt">Most articles on real estate tokenization focus heavily on the technical aspects of blockchain and Web 3.0, but it's more valuable to understand how this technology...</div>
+                  </div>
+                  <div class="blog-read-more">
+                      <span>Read more</span>
+                      <div class="w-6 h-6">
+                          <svg class="w-4 h-4 text-[#0095d4]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M10 17l5-5-5-5v10z"/></svg>
+                      </div>
+                  </div>
+              </div>
+              <div class="blog-item">
+                  <img src="https://via.placeholder.com/300" alt="Sample Image 2">
+                  <div class="blog-details">
+                      <div class="blog-meta">
+                          <div class="blog-category">Category</div>
+                          <span class="blog-read-time">5 min read</span>
+                      </div>
+                      <div class="blog-title">The Future of Real Estate Investment</div>
+                      <div class="blog-excerpt">In the annals of technological progress, humanity has transitioned from crude methodologies to a digitally-driven world.</div>
+                  </div>
+                  <div class="blog-read-more">
+                      <span>Read more</span>
+                      <div class="w-6 h-6">
+                          <svg class="w-4 h-4 text-[#0095d4]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M10 17l5-5-5-5v10z"/></svg>
+                      </div>
+                  </div>
+              </div>
+              <div class="blog-item">
+                  <img src="https://via.placeholder.com/300" alt="Sample Image 3">
+                  <div class="blog-details">
+                      <div class="blog-meta">
+                          <div class="blog-category">Category</div>
+                          <span class="blog-read-time">5 min read</span>
+                      </div>
+                      <div class="blog-title">How to get started</div>
+                      <div class="blog-excerpt">As a beginner in real estate tokenization, whether you're skeptical about investing or eager to explore investing in real estate assets through tokens...</div>
+                  </div>
+                  <div class="blog-read-more">
+                      <span>Read more</span>
+                      <div class="w-6 h-6">
+                          <svg class="w-4 h-4 text-[#0095d4]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M10 17l5-5-5-5v10z"/></svg>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      </body>
+    

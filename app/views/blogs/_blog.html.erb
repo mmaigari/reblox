@@ -1,27 +1,18 @@
-<div id="<%= dom_id blog %>">
-  <p>
-    <strong>Title:</strong>
-    <%= blog.title %>
-  </p>
 
-  <p>
-    <strong>Minute:</strong>
-    <%= blog.minute %>
-  </p>
-
-  <p>
-    <strong>Desc:</strong>
-    <%= blog.desc %>
-  </p>
-
-  <p>
-    <strong>Image:</strong>
-    <%= blog.image %>
-  </p>
-
-  <p>
-    <strong>Content:</strong>
-    <%= blog.content %>
-  </p>
-
-</div>
+    <div class="blog-item" id="<%= dom_id blog %>">
+                  <img src="https://via.placeholder.com/300" alt="Sample Image 1">
+                  <div class="blog-details">
+                      <div class="blog-meta">
+                          <div class="blog-category">Category</div>
+                          <span class="blog-read-time"><%= blog.minute %> min read</span>
+                      </div>
+                      <div class="blog-title"><%= blog.title %></div>
+                      <div class="blog-excerpt"><%= blog.desc %></div>
+                  </div>
+                  <div class="blog-read-more">
+                      <span>Read more<%= link_to "Read more", @blog %></span>
+                      <div class="w-6 h-6">
+                          <svg class="w-4 h-4 text-[#0095d4]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M10 17l5-5-5-5v10z"/></svg>
+                      </div>
+                  </div>
+              </div>
