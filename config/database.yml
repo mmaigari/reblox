@@ -80,5 +80,5 @@ test:
 production:
   <<: *default
   database: reblox_production
-  username: reblox
+  username: pos
   password: <%= ENV["REBLOX_DATABASE_PASSWORD"] %>
