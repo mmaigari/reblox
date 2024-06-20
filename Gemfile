@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 ruby "3.1.2"
 
-# Bundle edge Rails instead: gem "rails", thub: "rails/rails", branch: "main"
+# Bundle ee Rails instead: gem "rails", thub: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.3", ">= 7.1.3.3"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
