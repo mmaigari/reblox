@@ -49,7 +49,7 @@
       }
 
       .loop-input-field {
-          width: 100%;
+          width: 35%;
           height: 50px;
           display: flex;
           align-items: center;
@@ -124,6 +124,8 @@
 
     </style>
 
+<%= form_with model: @loop, local: true do |form| %>
+
 <body id="body-loop">
 
 <div id="bodyloop" class="loop-container">
@@ -132,15 +134,12 @@
         <span class="loop-subtitle">Stay ahead of the curve with inspiring content, special insights and industry trends tailored to your investment journey in the ever-evolving digital landscape.</span>
     </div>
     <div class="loop-form-container">
-        <div class="loop-input-box">
-            <div class="loop-input-field">Enter Name</div>
-        </div>
-        <div class="loop-input-box">
-            <div class="loop-input-field">Enter Email Address</div>
-        </div>
-        <div class="loop-submit-button">Stay in the loop</div>
+        <%= form.text_field :name, class:'loop-input-field', placeholder:'Enter Full Name' %>
+       <%= form.email_field :email, class:'loop-input-field', placeholder:'Enter Email Address' %>
+        <%= form.submit "Stay in the Loop?", class:'loop-submit-button'  %>
     </div>
 </div>
 
 </body>
+<% end %>
 
