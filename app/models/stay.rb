@@ -1,2 +1,0 @@
-class Stay < ApplicationRecord
-end

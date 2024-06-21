@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  resources :stays
   get 'blog/index'
   get 'blog/get-started'
   get 'blog/what-is'
