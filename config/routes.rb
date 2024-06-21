@@ -1,8 +1,4 @@
 Rails.application.routes.draw do
-  get 'blog/index'
-  get 'blog/get-started'
-  get 'blog/what-is'
-  get 'blog/future-of'
   resources :contact_us
   get 'blog/1'
   get 'blog/2'
