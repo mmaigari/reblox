@@ -410,10 +410,9 @@
             </div>
         </div>
 
-        <div x-data="{ isExpanded: false }"
+       <div x-data="{ isExpanded: false }"
         x-on:mouseover="isExpanded = true"
-        x-on:mouseleave="isExpanded = false">
-            <button id="controlsAccordionItemOne" type="button" class="flex w-full items-center justify-between gap-4 py-4 text-left underline-offset-2 focus-visible:underline focus-visible:outline-none" aria-controls="accordionItemOne" @click="isExpanded = ! isExpanded" :class="isExpanded ? 'text-onSurfaceStrong dark:text-onSurfaceDarkStrong font-bold text-2xl'  : 'text-onSurface dark:text-onSurfaceDark text-2xl '" :aria-expanded="isExpanded ? 'true' : 'false'"> 
+        x-on:mouseleave="isExpanded = false"> id="controlsAccordionItemOne" type="button" class="flex w-full items-center justify-between gap-4 py-4 text-left underline-offset-2 focus-visible:underline focus-visible:outline-none" aria-controls="accordionItemOne" @click="isExpanded = ! isExpanded" :class="isExpanded ? 'text-onSurfaceStrong dark:text-onSurfaceDarkStrong font-bold text-2xl'  : 'text-onSurface dark:text-onSurfaceDark text-2xl '" :aria-expanded="isExpanded ? 'true' : 'false'"> 
                 3. Smart contract vulnerabilities
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke="#036701" class="size-5 shrink-0 transition" aria-hidden="true" :class="isExpanded  ?  'rotate-180'  :  ''">
                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
