@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :contact_us
+  resources :loops, only: [:new, :create]
   get 'blog/1'
   get 'blog/2'
   get 'blog/3'

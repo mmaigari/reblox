@@ -9,7 +9,10 @@
     </div>
     <div class="contact-info">
         <div class="contact-email">
-            <svg class="w-5 h-5 text-black" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12H8m8 4H8m8-8H8m12-2.25A2.25 2.25 0 0017.75 2h-11.5A2.25 2.25 0 004 4.25v15.5A2.25 2.25 0 006.25 22h11.5A2.25 2.25 0 0020 19.75V4.25z"/></svg>
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 4.00049H20.5C21.6046 4.00049 22.5 4.89592 22.5 6.00049V18.0005C22.5 19.1051 21.6046 20.0005 20.5 20.0005H4.5C3.39543 20.0005 2.5 19.1051 2.5 18.0005V6.00049C2.5 4.89592 3.39543 4.00049 4.5 4.00049ZM14.15 15.4505L20.5 11.0005V8.90049L13.15 14.0505C12.7591 14.3218 12.2409 14.3218 11.85 14.0505L4.5 8.90049V11.0005L10.85 15.4505C11.841 16.1432 13.159 16.1432 14.15 15.4505Z" fill="black"/>
+            </svg>
+
             <span>hello@ade.io</span>
         </div>
     </div>
@@ -22,6 +25,11 @@
         <div class="contact-form-group">
             <label for="email">Email</label>
             <%= form.email_field :email, placeholder:'Enter Email Address', id:'email' %>
+        </div>
+        <div class="contact-form-group">
+            <label for="name">Subject</label>
+            
+            <%= form.text_field :name, placeholder:'Enter Subject', id:'subject' %>
         </div>
         <div class="contact-form-group">
             <label for="message">Message</label>
