@@ -1,11 +1,11 @@
 <div id="main" >
  <%= render 'layouts/nav' %>
 </div> 
-<section class="dark:bg-[#00234c] dark:text-white" style="font-family: 'Nunito', sans-serif;">
+<section class="bg-[#00234c] text-white" style="font-family: 'Nunito', sans-serif;">
     <div class="container flex flex-col-reverse lg:flex-row justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:justify-between">
         <div class="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
             <h1 class="text-5xl font-bold leading-none sm:text-6xl">Embrace the
-                <span class="dark:text-[#0fc3ff]"><i>Real Future,</i> </span>Today
+                <span class="text-[#0fc3ff]"><i>Real Future,</i> </span>Today
             </h1>
             <p class="mt-6 mb-8 text-lg sm:mb-12">A cutting-edge digital solution that empowers real estate investors with Secure, Accessible and Affordable investment opportunities globally.
                 
@@ -42,22 +42,24 @@
 
 
 <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20" style="font-family: 'Nunito', sans-serif;">
-       <div class="grid gap-10 lg:grid-cols-2">
-         <div class="flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg">
+       
+      <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+
+        <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-[#04344d] sm:text-4xl md:mx-auto" style="font-family: 'Nunito', sans-serif;">
+          <span class="relative inline-block">
+            
+            <%= image_tag "public/logo-faded.png", class:"absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block" %>
+            
+            <span class="relative">About us</span>
+          </span>
+          
+        </h2>
+        <p id="target-section" class="text-base text-[#04344d] md:text-lg" style="font-family: 'Nunito', sans-serif;">
+          Reblox facilitates the seamless digitization of real estate assets, allowing for fractional ownership. Investors gain access to a transparent and secure ecosystem, enabling diversified participation in the real estate market. The platform enhances liquidity, promotes global accessibility, and ensures regulatory compliance, providing a cutting-edge solution for modern real estate investment
+        </p>
+      </div>
+
       
-           <div class="max-w-xl mb-6 dark:text-[#04344d] text-[#04344d]" style="font-family: 'Nunito', sans-serif; ">
-             <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight  sm:text-4xl sm:leading-none" style="font-family: 'Nunito', sans-serif;">
-               About us
-             </h2>
-             <p class="text-sm text-[#04344d] md:text-lg" style="font-family: 'Nunito', sans-serif"; >
-               Reblox facilitates the seamless digitization of real estate assets, allowing for fractional ownership. Investors gain access to a transparent and secure ecosystem, enabling diversified participation in the real estate market. The platform enhances liquidity, promotes global accessibility, and ensures regulatory compliance, providing a cutting-edge solution for modern real estate investment
-             </p>
-           </div>
-        
-         </div>
-  
-       </div>
- 
   <div class="grid gap-8 row-gap-5 lg:grid-cols-3">
     <div class="relative p-px overflow-hidden transition duration-300 transform border rounded-lg shadow-sm hover:scale-105 group hover:shadow-xl hover:bg-[#00234c] hover:text-white ">
       <div class="absolute bottom-0 left-0 w-full h-1 duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100"></div>
@@ -91,7 +93,7 @@
         </div>
           <br>
 
-        <p class="mb-2 text-sm text-[#04344d] hover:text-white"style="font-family: 'Nunito', sans-serif;">
+        <p class="mb-2 text-sm "style="font-family: 'Nunito', sans-serif;">
           To democratize global real estate access and empower individuals to control their financial future. 
         </p>
         
@@ -125,12 +127,12 @@
           </svg>
           <br>
            <div>
-          <h6 class="font-semibold leading-5 text-[#04344d] hover:text-white" style="font-family: 'Nunito', sans-serif;"> Our Vision</h6>
+          <h6 class="font-semibold leading-5 " style="font-family: 'Nunito', sans-serif;"> Our Vision</h6>
 
         </div>
           <br>
 
-        <p class="mb-2 text-sm text-[#04344d]04344d hover:text-white">
+        <p class="mb-2 text-sm ">
           To be the world’s premier leader, offering unparalleled security, accessibility and affordability in fractional investment solutions for real estate assets across the globe.
         </p>
         
@@ -165,12 +167,12 @@
           </svg>
           <br>
            <div>
-          <h6 class="font-semibold text-[#04344d] hover:text-white leading-5"> Our Values</h6>
+          <h6 class="font-semibold  leading-5"> Our Values</h6>
 
         </div>
           <br>
 
-        <p class="mb-2 text-sm text-[#04344d] hover:text-white">
+        <p class="mb-2 text-sm">
           Together we strive to deliver a reliable product and services, foster a resilient team, and cultivate a relatable experience for our customers. 
         </p>
         
@@ -199,12 +201,17 @@
     </p>
   </div>
   <div  class="mx-auto lg:max-w-2xl">
-    <div class="relative rounded-md w-full transition-shadow duration-300 hover:shadow-xl">
-      
-       <iframe class="object-cover w-full h-56 rounded-lg shadow-lg sm:h-64 md:h-80 lg:h-96"
-          src="https://www.youtube.com/embed/xGKby6xOc9Y">
-</iframe> 
-  </div>
+    
+</div>
+<script src="https://fast.wistia.com/embed/medias/8ofss99b1q.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+<div class="wistia_responsive_padding rounded-lg" style="padding:56.25% 0 0 0;position:relative;">
+  <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+    <div class="wistia_embed wistia_async_8ofss99b1q seo=true videoFoam=true" style="height:100%;position:relative;width:100%">
+      <div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
+        <img class="rounded-lg" src="https://fast.wistia.com/embed/medias/8ofss99b1q/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" />
+</div>
+</div>
+</div>
 </div>
 
 </div>
@@ -347,15 +354,15 @@
       
     </h2>
     <p class="text-base text-[#04344d] md:text-lg" style="font-family: 'Nunito', sans-serif;">
-     Knowing all the risks is your right
+     Potential Risk and Mitigation Strategies
     </p>
   </div>
   <div class="w-full mx-auto lg:w-2xl">
-    <div class="w-full divide-y divide-slate-300 text-black dark:divide-slate-700 dark:text-black">
+    <div class="w-full divide-y divide-slate-300 text-black divide-slate-700 text-black">
         <div x-data="{ isExpanded: false }"
         x-on:mouseover="isExpanded = true"
         x-on:mouseleave="isExpanded = false">
-            <button id="controlsAccordionItemOne" type="button" class="flex w-full items-center justify-between gap-4 py-4 text-left underline-offset-2 focus-visible:underline focus-visible:outline-none" aria-controls="accordionItemOne" @click="isExpanded = ! isExpanded" :class="isExpanded ? 'text-onSurfaceStrong dark:text-onSurfaceDarkStrong font-bold text-2xl'  : 'text-onSurface dark:text-onSurfaceDark text-2xl '" :aria-expanded="isExpanded ? 'true' : 'false'"> 
+            <button id="controlsAccordionItemOne" type="button" class="flex w-full items-center justify-between gap-4 py-4 text-left underline-offset-2 focus-visible:underline focus-visible:outline-none" aria-controls="accordionItemOne" @click="isExpanded = ! isExpanded" :class="isExpanded ? 'text-onSurfaceStrong text-onSurfaceDarkStrong font-bold text-2xl'  : 'text-onSurface text-onSurfaceDark text-2xl '" :aria-expanded="isExpanded ? 'true' : 'false'"> 
                 1. Risk associated with regulatory uncertainties
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke="#036701" class="size-5 shrink-0 transition" aria-hidden="true" :class="isExpanded  ?  'rotate-180'  :  ''">
                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
@@ -388,7 +395,7 @@
         <div x-data="{ isExpanded: false }"
         x-on:mouseover="isExpanded = true"
         x-on:mouseleave="isExpanded = false">
-            <button id="controlsAccordionItemOne" type="button" class="flex w-full items-center justify-between gap-4 py-4 text-left underline-offset-2 focus-visible:underline focus-visible:outline-none" aria-controls="accordionItemOne" @click="isExpanded = ! isExpanded" :class="isExpanded ? 'text-onSurfaceStrong dark:text-onSurfaceDarkStrong font-bold text-2xl'  : 'text-onSurface dark:text-onSurfaceDark text-2xl '" :aria-expanded="isExpanded ? 'true' : 'false'"> 
+            <button id="controlsAccordionItemOne" type="button" class="flex w-full items-center justify-between gap-4 py-4 text-left underline-offset-2 focus-visible:underline focus-visible:outline-none" aria-controls="accordionItemOne" @click="isExpanded = ! isExpanded" :class="isExpanded ? 'text-onSurfaceStrong text-onSurfaceDarkStrong font-bold text-2xl'  : 'text-onSurface text-onSurfaceDark text-2xl '" :aria-expanded="isExpanded ? 'true' : 'false'"> 
                 2. Market volatility impacting token values
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke="#036701" class="size-5 shrink-0 transition" aria-hidden="true" :class="isExpanded  ?  'rotate-180'  :  ''">
                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
@@ -420,7 +427,7 @@
 
        <div x-data="{ isExpanded: false }"
         x-on:mouseover="isExpanded = true"
-        x-on:mouseleave="isExpanded = false"> <button id="controlsAccordionItemOne" type="button" class="flex w-full items-center justify-between gap-4 py-4 text-left underline-offset-2 focus-visible:underline focus-visible:outline-none" aria-controls="accordionItemOne" @click="isExpanded = ! isExpanded" :class="isExpanded ? 'text-onSurfaceStrong dark:text-onSurfaceDarkStrong font-bold text-2xl'  : 'text-onSurface dark:text-onSurfaceDark text-2xl '" :aria-expanded="isExpanded ? 'true' : 'false'"> 
+        x-on:mouseleave="isExpanded = false"> <button id="controlsAccordionItemOne" type="button" class="flex w-full items-center justify-between gap-4 py-4 text-left underline-offset-2 focus-visible:underline focus-visible:outline-none" aria-controls="accordionItemOne" @click="isExpanded = ! isExpanded" :class="isExpanded ? 'text-onSurfaceStrong text-onSurfaceDarkStrong font-bold text-2xl'  : 'text-onSurface text-onSurfaceDark text-2xl '" :aria-expanded="isExpanded ? 'true' : 'false'"> 
                 3. Smart contract vulnerabilities
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke="#036701" class="size-5 shrink-0 transition" aria-hidden="true" :class="isExpanded  ?  'rotate-180'  :  ''">
                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
@@ -444,7 +451,7 @@
         <div x-data="{ isExpanded: false }"
         x-on:mouseover="isExpanded = true"
         x-on:mouseleave="isExpanded = false">
-            <button id="controlsAccordionItemOne" type="button" class="flex w-full items-center justify-between gap-4 py-4 text-left underline-offset-2 focus-visible:underline focus-visible:outline-none" aria-controls="accordionItemOne" @click="isExpanded = ! isExpanded" :class="isExpanded ? 'text-onSurfaceStrong dark:text-onSurfaceDarkStrong font-bold text-2xl'  : 'text-onSurface dark:text-onSurfaceDark text-2xl '" :aria-expanded="isExpanded ? 'true' : 'false'"> 
+            <button id="controlsAccordionItemOne" type="button" class="flex w-full items-center justify-between gap-4 py-4 text-left underline-offset-2 focus-visible:underline focus-visible:outline-none" aria-controls="accordionItemOne" @click="isExpanded = ! isExpanded" :class="isExpanded ? 'text-onSurfaceStrong text-onSurfaceDarkStrong font-bold text-2xl'  : 'text-onSurface text-onSurfaceDark text-2xl '" :aria-expanded="isExpanded ? 'true' : 'false'"> 
                 4. Potential security breaches that may compromise the digital representation of real assets
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke="#036701" class="size-5 shrink-0 transition" aria-hidden="true" :class="isExpanded  ?  'rotate-180'  :  ''">
                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
@@ -468,7 +475,7 @@
         <div x-data="{ isExpanded: false }"
         x-on:mouseover="isExpanded = true"
         x-on:mouseleave="isExpanded = false">
-            <button id="controlsAccordionItemOne" type="button" class="flex w-full items-center justify-between gap-4 py-4 text-left underline-offset-2 focus-visible:underline focus-visible:outline-none" aria-controls="accordionItemOne" @click="isExpanded = ! isExpanded" :class="isExpanded ? 'text-onSurfaceStrong dark:text-onSurfaceDarkStrong font-bold text-2xl'  : 'text-onSurface dark:text-onSurfaceDark text-2xl '" :aria-expanded="isExpanded ? 'true' : 'false'"> 
+            <button id="controlsAccordionItemOne" type="button" class="flex w-full items-center justify-between gap-4 py-4 text-left underline-offset-2 focus-visible:underline focus-visible:outline-none" aria-controls="accordionItemOne" @click="isExpanded = ! isExpanded" :class="isExpanded ? 'text-onSurfaceStrong text-onSurfaceDarkStrong font-bold text-2xl'  : 'text-onSurface text-onSurfaceDark text-2xl '" :aria-expanded="isExpanded ? 'true' : 'false'"> 
                 5. Issues related to liquidity and adoption 
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke="#036701" class="size-5 shrink-0 transition" aria-hidden="true" :class="isExpanded  ?  'rotate-180'  :  ''">
                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
@@ -563,9 +570,13 @@
         <div class="toast-text">Will you take a survey to help us serve you better and improve our website</div>
     </div>
     <div class="arrow-icon">
-        <svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M16 14C16 13.258 16.733 12.15 17.475 11.22C18.429 10.02 19.569 8.973 20.876 8.174C21.856 7.575 23.044 7 24 7M24 7C23.044 7 21.855 6.425 20.876 5.826C19.569 5.026 18.429 3.979 17.475 2.781C16.733 1.85 16 0.74 16 0M24 7L0 7" stroke="#065374"/>
-        </svg>
+    
+
+
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="20" cy="20" r="20" fill="#E7F3E7"/>
+<path d="M25 28C25 27.258 25.733 26.15 26.475 25.22C27.429 24.02 28.569 22.973 29.876 22.174C30.856 21.575 32.044 21 33 21M33 21C32.044 21 30.855 20.425 29.876 19.826C28.569 19.026 27.429 17.979 26.475 16.781C25.733 15.85 25 14.74 25 14M33 21L9 21" stroke="#12A00F"/>
+</svg>
 
     </div>
 </div>
