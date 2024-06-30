@@ -1,72 +1,7 @@
 <div id="main" >
  <%= render 'layouts/nav' %>
+
 </div> 
-<body class="flex justify-center items-center min-h-screen bg-gray-100">
-    <div class="w-full max-w-[1312px] h-[532px] flex flex-wrap lg:flex-nowrap gap-5">
-        <div class="w-full lg:w-1/2 flex flex-col gap-4 bg-white p-5 rounded-lg shadow-md">
-            
-            <%= image_tag "wr.jpg", class:"w-full h-[280px] object-cover rounded-lg" %>
-            <div class="flex items-center gap-3">
-                <div class="bg-blue-100 px-2 py-1 rounded-lg">
-                    <span class="font-semibold text-xs text-black">Category</span>
-                </div>
-                <span class="font-semibold text-xs text-black">5 min read</span>
-            </div>
-            <div class="flex flex-col gap-2">
-                <span class="font-bold text-lg text-blue-500">What is Real Estate Tokenization</span>
-                <span class="font-normal text-sm text-gray-600">Most articles on real estate tokenization focus heavily on the technical aspects of blockchain and Web 3.0, but it's more valuable to understand how this technology...</span>
-            </div>
-            <div class="flex justify-center items-center gap-2 text-blue-500 cursor-pointer">
-                <span class="font-normal text-sm">Read more</span>
-                <svg viewBox="0 0 24 24" class="w-4 h-4">
-                    <path d="M12 4l1.41 1.41L7.83 11H20v2H7.83l5.58 5.59L12 20l-8-8z"/>
-                </svg>
-            </div>
-        </div>
-        <div class="w-full lg:w-1/2 flex flex-col gap-5">
-            <div class="flex flex-col gap-4 bg-white p-5 rounded-lg shadow-md">
-           
-                <%= image_tag "tf.jpg", class:"w-full h-[200px] object-cover rounded-lg" %>
-                <div class="flex items-center gap-3">
-                    <div class="bg-blue-100 px-2 py-1 rounded-lg">
-                        <span class="font-semibold text-xs text-black">Category</span>
-                    </div>
-                    <span class="font-semibold text-xs text-black">5 min read</span>
-                </div>
-                <div class="flex flex-col gap-2">
-                    <span class="font-bold text-lg text-blue-500">The Future of Real Estate Investment</span>
-                    <span class="font-normal text-sm text-gray-600">In the annals of technological progress, humanity has transitioned from crude methodologies to a digitally-driven world.</span>
-                </div>
-                <div class="flex justify-center items-center gap-2 text-blue-500 cursor-pointer">
-                    <span class="font-normal text-sm">Read more</span>
-                    <svg viewBox="0 0 24 24" class="w-4 h-4">
-                        <path d="M12 4l1.41 1.41L7.83 11H20v2H7.83l5.58 5.59L12 20l-8-8z"/>
-                    </svg>
-                </div>
-            </div>
-            <div class="flex flex-col gap-4 bg-white p-5 rounded-lg shadow-md">
-             
-                <%= image_tag "abc.png", class:"w-full h-[200px] object-cover rounded-lg" %>
-                <div class="flex items-center gap-3">
-                    <div class="bg-blue-100 px-2 py-1 rounded-lg">
-                        <span class="font-semibold text-xs text-black">Category</span>
-                    </div>
-                    <span class="font-semibold text-xs text-black">5 min read</span>
-                </div>
-                <div class="flex flex-col gap-2">
-                    <span class="font-bold text-lg text-blue-500">How to get started</span>
-                    <span class="font-normal text-sm text-gray-600">As a beginner in real estate tokenization, whether you're skeptical about investing or eager to explore investing in real estate assets through tokens...</span>
-                </div>
-                <div class="flex justify-center items-center gap-2 text-blue-500 cursor-pointer">
-                    <span class="font-normal text-sm">Read more</span>
-                    <svg viewBox="0 0 24 24" class="w-4 h-4">
-                        <path d="M12 4l1.41 1.41L7.83 11H20v2H7.83l5.58 5.59L12 20l-8-8z"/>
-                    </svg>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
 
 <p style="color: green"><%= notice %></p>
 
@@ -80,6 +15,91 @@
     </p>
   <% end %>
 </div>
+
+<div class="flex flex-wrap mb-16">
+  <!-- Left div (large) -->
+  <div class="w-full lg:w-1/2 flex flex-col gap-4 p-5 rounded-lg ">
+    <%= image_tag "wr.jpg", class:"w-full h-[280px] object-cover rounded-lg" %>
+    <div class="flex items-center gap-3">
+      <div class="bg-blue-100 px-2 py-1 rounded-lg">
+        <span class="font-semibold text-xs text-black">Category</span>
+      </div>
+      <span class="font-semibold text-xs text-black">5 min read</span>
+    </div>
+    <div class="flex flex-col gap-2">
+      <span class="font-bold text-lg text-blue-500">What is Real Estate Tokenization</span>
+      <span class="font-normal text-sm text-gray-600">Most articles on real estate tokenization focus heavily on the technical aspects of blockchain and Web 3.0, but it's more valuable to understand how this technology...</span>
+    </div>
+    <div class="flex justify-center items-center gap-2 text-blue-500 cursor-pointer">
+      <span class="font-normal text-sm">Read more</span>
+      <svg viewBox="0 0 24 24" class="w-4 h-4">
+        <path d="M12 4l1.41 1.41L7.83 11H20v2H7.83l5.58 5.59L12 20l-8-8z"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- Right div (split into two) -->
+  <div class="w-full lg:w-1/2 flex flex-col gap-8">
+    <!-- Top right div -->
+    <div class="flex items-center gap-6">
+      <div class="w-[250px] h-[250px] bg-[#d9d9d9]">
+        <img src="https://via.placeholder.com/250" alt="Sample Image">
+      </div>
+      <div class="flex flex-col gap-[50px] grow">
+        <div class="flex flex-col gap-4">
+          <div class="flex items-center gap-4">
+            <div class="flex bg-[#f4f4f4] px-2 py-1">
+              <span class="font-semibold text-xs text-black">Category</span>
+            </div>
+            <span class="font-normal text-xs text-black">5 min read</span>
+          </div>
+          <span class="font-semibold text-[20px] leading-[32px] text-[#0c0f27]">Blog title heading will go here</span>
+          <span class="font-normal text-sm text-[#595959]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</span>
+        </div>
+        <div class="h-10 flex justify-end items-center gap-[11px]">
+          <div class="h-10 flex justify-center items-center gap-1 px-2.5 py-[5px] rounded-xl">
+            <span class="font-semibold text-sm text-[#454545]">Read more</span>
+            <div class="w-4 h-4">
+              <svg class="w-[9.333px] h-[9.333px]"></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom right div -->
+    <div class="flex items-center gap-6">
+      <div class="w-[250px] h-[250px] bg-[#d9d9d9]">
+        <img src="https://via.placeholder.com/250" alt="Sample Image">
+      </div>
+      <div class="flex flex-col gap-[50px] grow">
+        <div class="flex flex-col gap-4">
+          <div class="flex items-center gap-4">
+            <div class="flex bg-[#f4f4f4] px-2 py-1">
+              <span class="font-semibold text-xs text-black">Category</span>
+            </div>
+            <span class="font-normal text-xs text-black">5 min read</span>
+          </div>
+          <span class="font-semibold text-[20px] leading-[32px] text-[#0c0f27]">Blog title heading will go here</span>
+          <span class="font-normal text-sm text-[#595959]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</span>
+        </div>
+        <div class="h-10 flex justify-end items-center gap-[11px]">
+          <div class="h-10 flex justify-center items-center gap-1 px-2.5 py-[5px] rounded-xl">
+            <span class="font-semibold text-sm text-[#454545]">Read more</span>
+            <div class="w-4 h-4">
+              <svg class="w-[9.333px] h-[9.333px]"></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
 
 
 
