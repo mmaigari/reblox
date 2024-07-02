@@ -18,7 +18,7 @@ class LoopController < ApplicationController
 
   private
 
-  def feedback_params
+  def sloop_params
     params.require(:sloop).permit(:name, :email)
   end
 end
