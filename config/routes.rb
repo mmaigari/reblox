@@ -1,15 +1,15 @@
 Rails.application.routes.draw do
-  resources :contact_us
+  get 'contact/new'
+  get 'contact/create'
+  get 'contact/index'
+  get 'loop/new'
+  get 'loop/create'
+  get 'loop/index'
+  get 'blog/what'
+  get 'blog/how'
+  get 'blog/future'
   resources :loops, only: [:new, :create]
-  get 'blog/1'
-  get 'blog/2'
-  get 'blog/3'
-  get 'blog/4'
-  get 'blog/5'
-  get 'blog/6'
-  get 'blog/7'
-  get 'blog/8'
-  get 'blog/9'
+ 
   resources :blogs
   resources :surveys
   get 'base/home'

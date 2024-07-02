@@ -1,8 +1,9 @@
-class CreateContactUs < ActiveRecord::Migration[7.1]
+class CreateContactus < ActiveRecord::Migration[7.1]
   def change
-    create_table :contact_us do |t|
+    create_table :contactus do |t|
       t.string :name
       t.string :email
+      t.string :subject
       t.text :message
 
       t.timestamps
