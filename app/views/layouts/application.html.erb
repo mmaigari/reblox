@@ -20,7 +20,9 @@
 
   <body class="bg-[#E9FAFF] ">
     <div class="antialiased">
-      
+      <% if notice %>
+      <%= render 'layouts/alert' %>
+      <% end %>
       <%= yield %>
     </div>
 

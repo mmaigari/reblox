@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'admin/index'
+  get 'admin/dashboard'
+  devise_for :administrators
   get 'contact/new'
   get 'contact/create'
   get 'contact/index'

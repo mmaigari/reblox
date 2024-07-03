@@ -76,3 +76,4 @@ end
 
 gem 'cloudinary', '~> 2.1', '>= 2.1.1'
 gem 'dotenv'
+gem "devise", "~> 4.9"
