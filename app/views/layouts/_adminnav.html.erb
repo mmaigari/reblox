@@ -16,7 +16,11 @@
       <li><%= link_to 'Stay in the Loops', blogs_path, class:'text-sm text-white hover:text-gray-300' %></li>
       <li><%= link_to 'Contacts', root_path, class:'text-sm text-white hover:text-gray-300' %></li>
     </ul>
-    <a href="#bodyloop" class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-[#0fc3ff] text-white hover:bg-opacity-80 text-sm font-bold rounded-xl transition duration-200" href="#bodyloop">Stay in the Loop</a>
+
+    <% if current_administrator %>
+             <%= button_to "Log out", destroy_administrator_session_path, method: :delete, class: "hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-[#0fc3ff] text-white hover:bg-opacity-80 text-sm font-bold rounded-xl transition duration-200" %>
+
+     <%end%>
   </nav>
   <div class="navbar-menu relative z-50 hidden">
     <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
@@ -56,19 +60,24 @@
           <div>
             <ul>
               <li class="mb-1">
-                <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">About Us</a>
+                
+                <%= link_to 'Surveys', root_path, class:'block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded' %>
               </li>
               <li class="mb-1">
-                <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Blog</a>
+                <%= link_to 'Stay in th Loops', root_path, class:'block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded' %>
               </li>
               <li class="mb-1">
-                <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Contact Us</a>
+                <%= link_to 'Contacts', root_path, class:'block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded' %>
               </li>
             </ul>
           </div>
           <div class="mt-auto">
             <div class="pt-6">
               <a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-[#0fc3ff] hover:bg-opacity-80 rounded-xl" href="#">Stay in the loop?</a>
+              <% if current_administrator %>
+             <%= button_to "Log out", destroy_administrator_session_path, method: :delete, class: "block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-[#0fc3ff] hover:bg-opacity-80 rounded-xl" %>
+
+     <%end%>
             </div>
             <p class="my-4 text-xs text-center text-gray-400">
               <span>Copyright © Reblox 2024</span>
