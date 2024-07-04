@@ -74,7 +74,7 @@
           <div class="mt-auto">
             <div class="pt-6">
               <a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-[#0fc3ff] hover:bg-opacity-80 rounded-xl" href="#">Stay in the loop?</a>
-              <% if current_administrator %>
+              <% if administrator_signed_in? %>
              <%= button_to "Log out", destroy_administrator_session_path, method: :delete, class: "block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-[#0fc3ff] hover:bg-opacity-80 rounded-xl" %>
 
      <%end%>
