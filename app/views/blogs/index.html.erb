@@ -3,9 +3,10 @@
 
 </div> 
 
-<p style="color: green"><%= notice %></p>
 
-<h1>Blogs</h1>
+<p style="color: green"><%= notice %></p>
+<p class="font-semibold text-[48px] leading-[64px] text-black">Blog</p>
+
 
 <div id="blogs">
   <% @blogs.each do |blog| %>
@@ -16,7 +17,8 @@
   <% end %>
 </div>
 
-<div class="flex flex-wrap mb-16">
+<div class="flex flex-wrap mb-16 px-4 lg:px-0">
+
   <!-- Left div (large) -->
   <div class="w-full lg:w-1/2 flex flex-col gap-4 p-5 rounded-lg ">
     <%= image_tag "wr.jpg", class:"w-full h-[280px] object-cover rounded-lg" %>
@@ -39,56 +41,52 @@
   </div>
 
   <!-- Right div (split into two) -->
-  <div class="w-full lg:w-1/2 flex flex-col gap-8">
+  <div class="w-full lg:w-1/2 flex flex-col gap-8 p-5 rounded-lg lg:ml-4">
     <!-- Top right div -->
-    <div class="flex items-center gap-6">
-      <div class="w-[250px] h-auto">
-        <%= image_tag "tf.jpg", class:"w-full h-[80%]" %>
+    <div class="flex flex-col lg:flex-row items-center gap-6 mb-8 lg:mb-0">
+      <div class="w-full lg:w-[250px] h-auto">
+        <%= image_tag "tf.jpg", class:"w-full h-[250px] object-cover rounded-lg" %>
       </div>
-      <div class="flex flex-col gap-[50px] grow">
-        <div class="flex flex-col gap-4">
-          <div class="flex items-center gap-4">
-            <div class="flex bg-[#f4f4f4] px-2 py-1">
-              <span class="font-semibold text-xs text-black">Category</span>
-            </div>
-            <span class="font-normal text-xs text-black">5 min read</span>
+      <div class="flex flex-col gap-4 grow">
+        <div class="flex items-center gap-4">
+          <div class="flex bg-[#def4ff] px-2 py-1 rounded-lg">
+            <span class="font-semibold text-xs text-black">Category</span>
           </div>
-          <span class="font-semibold text-[20px] leading-[32px] text-[#0c0f27]">The Future of Real Estate Investment</span>
-          <span class="font-normal text-sm text-[#595959]">In the annals of technological progress, humanity has transitioned from crude methodologies to a digitally-driven world.</span>
+          <span class="font-normal text-xs text-black">5 min read</span>
         </div>
-        <div class="h-10 flex justify-end items-center gap-[11px]">
-          <div class="h-10 flex justify-center items-center gap-1 px-2.5 py-[5px] rounded-xl">
-            <span class="font-semibold text-sm text-[#454545]">Read more</span>
-            <div class="w-4 h-4">
-              <svg class="w-[9.333px] h-[9.333px]"></svg>
-            </div>
+        <span class="font-semibold text-[20px] leading-[32px] text-[#0095d4]">The Future of Real Estate Investment</span>
+        <span class="font-normal text-sm text-[#595959]">In the annals of technological progress, humanity has transitioned from crude methodologies to a digitally-driven world.</span>
+        <div class="h-10 flex justify-end items-center gap-2.5">
+          <div class="h-10 flex justify-center items-center gap-1 px-2.5 py-[5px] rounded-xl text-blue-500 cursor-pointer">
+            <span class="font-semibold text-sm">Read more</span>
+            <svg class="w-4 h-4" viewBox="0 0 24 24">
+              <path d="M12 4l1.41 1.41L7.83 11H20v2H7.83l5.58 5.59L12 20l-8-8z" />
+            </svg>
           </div>
         </div>
       </div>
     </div>
 
     <!-- Bottom right div -->
-    <div class="flex items-center gap-6">
-      <div class="w-[250px] h-auto">
-        <%= image_tag "abc.png", class:"w-full h-[60%]" %>
+    <div class="flex flex-col lg:flex-row items-center gap-6">
+      <div class="w-full lg:w-[250px] h-auto">
+        <%= image_tag "abc.png", class:"w-full h-[250px] object-cover rounded-lg" %>
       </div>
-      <div class="flex flex-col gap-[50px] grow">
-        <div class="flex flex-col gap-4">
-          <div class="flex items-center gap-4">
-            <div class="flex bg-[#f4f4f4] px-2 py-1">
-              <span class="font-semibold text-xs text-black">Category</span>
-            </div>
-            <span class="font-normal text-xs text-black">5 min read</span>
+      <div class="flex flex-col gap-4 grow">
+        <div class="flex items-center gap-4">
+          <div class="flex bg-[#def4ff] px-2 py-1 rounded-lg">
+            <span class="font-semibold text-xs text-black">Category</span>
           </div>
-          <span class="font-semibold text-[20px] leading-[32px] text-[#0c0f27]">How to get started</span>
-          <span class="font-normal text-sm text-[#595959]">As a beginner in real estate tokenization, whether you're skeptical about investing or eager to explore investing in real estate assets through tokens...</span>
+          <span class="font-normal text-xs text-black">5 min read</span>
         </div>
-        <div class="h-10 flex justify-end items-center gap-[11px]">
-          <div class="h-10 flex justify-center items-center gap-1 px-2.5 py-[5px] rounded-xl">
-            <span class="font-semibold text-sm text-[#454545]">Read more</span>
-            <div class="w-4 h-4">
-              <svg class="w-[9.333px] h-[9.333px]"></svg>
-            </div>
+        <span class="font-semibold text-[20px] leading-[32px] text-[#0095d4]">How to get started</span>
+        <span class="font-normal text-sm text-[#595959]">As a beginner in real estate tokenization, whether you're skeptical about investing or eager to explore investing in real estate assets through tokens...</span>
+        <div class="h-10 flex justify-end items-center gap-2.5">
+          <div class="h-10 flex justify-center items-center gap-1 px-2.5 py-[5px] rounded-xl text-blue-500 cursor-pointer">
+            <span class="font-semibold text-sm">Read more</span>
+            <svg class="w-4 h-4" viewBox="0 0 24 24">
+              <path d="M12 4l1.41 1.41L7.83 11H20v2H7.83l5.58 5.59L12 20l-8-8z" />
+            </svg>
           </div>
         </div>
       </div>
@@ -97,12 +95,18 @@
 
 </div>
 
+<div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20" style="font-family: 'Nunito', sans-serif;">
+       
+      <div class="">
+
+    <%= render 'layouts/loop' %>
+      </div>
+
+ 
+   </div>
+</div>
 <div>
-  <br>
-   <br>
-   <%= render 'layouts/loop' %>
-   <br>
-   <br>
+  
 </div>
 
 
