@@ -5,8 +5,8 @@
 
 
 <p style="color: green"><%= notice %></p>
-<p class="font-semibold text-[48px] leading-[64px] text-black">Blog</p>
 
+<h1 class="px-4 font-bold text-[32px] leading-[32px] text-[#0095d4]">Blogs</h1>
 
 <div id="blogs">
   <% @blogs.each do |blog| %>
@@ -18,7 +18,6 @@
 </div>
 
 <div class="flex flex-wrap mb-16 px-4 lg:px-0">
-
   <!-- Left div (large) -->
   <div class="w-full lg:w-1/2 flex flex-col gap-4 p-5 rounded-lg ">
     <%= image_tag "wr.jpg", class:"w-full h-[280px] object-cover rounded-lg" %>
@@ -28,6 +27,7 @@
       </div>
       <span class="font-semibold text-xs text-black">5 min read</span>
     </div>
+    <a href="https://reblox.app/blog/what">
     <div class="flex flex-col gap-2">
       <span class="font-bold text-lg text-blue-500">What is Real Estate Tokenization</span>
       <span class="font-normal text-sm text-gray-600">Most articles on real estate tokenization focus heavily on the technical aspects of blockchain and Web 3.0, but it's more valuable to understand how this technology...</span>
@@ -38,6 +38,7 @@
         <path d="M12 4l1.41 1.41L7.83 11H20v2H7.83l5.58 5.59L12 20l-8-8z"/>
       </svg>
     </div>
+</a>
   </div>
 
   <!-- Right div (split into two) -->
@@ -54,6 +55,7 @@
           </div>
           <span class="font-normal text-xs text-black">5 min read</span>
         </div>
+        <a href="https://reblox.app/blog/future">
         <span class="font-semibold text-[20px] leading-[32px] text-[#0095d4]">The Future of Real Estate Investment</span>
         <span class="font-normal text-sm text-[#595959]">In the annals of technological progress, humanity has transitioned from crude methodologies to a digitally-driven world.</span>
         <div class="h-10 flex justify-end items-center gap-2.5">
@@ -63,6 +65,7 @@
               <path d="M12 4l1.41 1.41L7.83 11H20v2H7.83l5.58 5.59L12 20l-8-8z" />
             </svg>
           </div>
+        </a>
         </div>
       </div>
     </div>
@@ -79,6 +82,7 @@
           </div>
           <span class="font-normal text-xs text-black">5 min read</span>
         </div>
+        <a href="https://reblox.app/blog/how">
         <span class="font-semibold text-[20px] leading-[32px] text-[#0095d4]">How to get started</span>
         <span class="font-normal text-sm text-[#595959]">As a beginner in real estate tokenization, whether you're skeptical about investing or eager to explore investing in real estate assets through tokens...</span>
         <div class="h-10 flex justify-end items-center gap-2.5">
@@ -88,6 +92,7 @@
               <path d="M12 4l1.41 1.41L7.83 11H20v2H7.83l5.58 5.59L12 20l-8-8z" />
             </svg>
           </div>
+        </a>
         </div>
       </div>
     </div>
