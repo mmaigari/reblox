@@ -1,52 +1,89 @@
-  <style>
+<style>
+  .container-s {
+    display: flex;
+    flex-direction: column; /* Change to column by default for small screens */
+    height: 100vh;
+    overflow: hidden; /* Prevent overflow of the entire container */
+  }
+
+  @media (min-width: 1024px) {
     .container-s {
-      display: flex;
-      height: 100vh;
-      overflow: hidden; /* Prevent overflow of the entire container */
+      flex-direction: row; /* Change to row for large screens */
     }
+  }
 
-    .left {
-      flex: 1;
-      padding: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+  .left, .right {
+    flex: 1;
+    padding: 20px;
+  }
+
+  .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .left img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+  }
+
+  .right {
+    overflow-y: auto; /* Ensure scrolling is possible */
+    height: 100vh;
+    position: relative;
+    padding: 20px;
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+  }
+
+  .right::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+  }
+
+  .slide {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .slide.active {
+    opacity: 1;
+  }
+
+  .scroll-indicator {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    color: #04344d;
+    animation: bounce 1s infinite;
+    display: none;
+  }
+
+  @media (min-width: 1024px) {
+    .scroll-indicator {
+      display: block; /* Show scroll indicator on large screens */
     }
+  }
 
-    .left img {
-      max-width: 100%;
-      max-height: 100%;
-      border-radius: 10px;
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
     }
-
-    .right {
-      flex: 1;
-      overflow-y: auto; /* Ensure scrolling is possible */
-      height: 100vh;
-      position: relative;
-      padding: 20px;
-      scrollbar-width: none; /* Hide scrollbar for Firefox */
+    40% {
+      transform: translateY(-10px);
     }
-
-    .right::-webkit-scrollbar {
-      display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+    60% {
+      transform: translateY(-5px);
     }
+  }
+</style>
 
-    .slide {
-      opacity: 0;
-      transition: opacity 0.5s ease-in-out;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-    }
-
-    .slide.active {
-      opacity: 1;
-    }
-
-  </style>
 
  
   <script>
@@ -81,24 +118,20 @@
         observer.observe(slide);
       });
     });
-
   </script>
-<div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20" style="font-family: 'Nunito', sans-serif;">
-  <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
 
-    <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-[#04344d] sm:text-4xl md:mx-auto" style="font-family: 'Nunito', sans-serif;">
-      <span class="relative inline-block">
-       
-        <%= image_tag "public/logo-faded.png", class:"absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block" %>
-        <span class="relative" style="font-family: 'Nunito', sans-serif;">Real Estate Tokenization Success Stories</span>
-      </span>
+  <div id="success" class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20" style="font-family: 'Nunito', sans-serif;">
+    <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+      <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-[#04344d] sm:text-4xl md:mx-auto" style="font-family: 'Nunito', sans-serif;">
+        <span class="relative inline-block">
+          <%= image_tag "public/logo-faded.png", class:"absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block" %>
+          <span class="relative" style="font-family: 'Nunito', sans-serif;">Real Estate Tokenization Success Stories</span>
+        </span>
+      </h2>
+    </div>
 
-    </h2>
-
-  </div>
-  <div class="flex flex-col items-center py-6">
- 
-    <div class="relative w-full">
+    <div class="flex flex-col items-center py-6">
+      <div class="relative w-full">
         <div class="container-s">
           <!-- Left div -->
           <div class="left">
@@ -172,9 +205,10 @@
                 </div>
               </div>
             </div>
+            <div class="scroll-indicator">&#x2191; Scroll up to view next</div>
           </div>
         </div>
+      </div>
     </div>
   </div>
 
-</div>
