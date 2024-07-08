@@ -3,14 +3,171 @@
 <%= form_for(resource, as: resource_name, url: unlock_path(resource_name), html: { method: :post }) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
+<div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20" style="font-family: 'Nunito', sans-serif;">
+  <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
 
-  <div class="actions">
-    <%= f.submit "Resend unlock instructions" %>
-  </div>
+    <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-[#04344d] sm:text-4xl md:mx-auto" style="font-family: 'Nunito', sans-serif;">
+      <span class="relative inline-block">
+        
+        <%= image_tag "public/logo-faded.png", class:"absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block" %>
+        
+        <span class="relative">Welcome Reblox Admin</span>
+      </span>
+      
+    </h2>
+  <br>
+  <body id="body-loop">
+
+    <div id="bodyloop" class="loop-container">
+      <div class="loop-header">
+      
+        <span class="loop-subtitle">Resend unlock instructions</span>
+    </div>
+    <div class="loop-form-container">
+      <%= f.email_field :email, class:'loop-input-field', placeholder:'Enter Email Address', autofocus: true, autocomplete: "email" %>
+
+
+
+  
 <% end %>
 
-<%= render "devise/shared/links" %>
+    </div>
+</div>
+
+</body>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<style>
+  .body-loop {
+      margin: 0;
+      font-family: Arial, sans-serif;
+  }
+
+  .loop-container {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+      background-color: #00234c;
+      padding: 40px 20px;
+      border-radius: 1rem;
+  }
+
+  .loop-header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1rem;
+  }
+
+  .loop-header .loop-title {
+      font-weight: bold;
+      font-size: 48px;
+      color: #effaff;
+  }
+
+  .loop-header .loop-subtitle {
+      font-weight: normal;
+      font-size: 16px;
+      color: #effaff;
+  }
+
+  .loop-form-container {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      align-items: center;
+  }
+
+  .loop-input-box {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 100%;
+      max-width: 390px;
+  }
+
+  .loop-input-field {
+      width: 35%;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      padding: 0 1rem;
+      border-radius: 0.5rem;
+      border: 1px solid #8c8c8c;
+      color: #8c8c8c;
+      font-size: 14px;
+  }
+
+  .loop-submit-button {
+      width: auto;
+      max-width: 250px; /* Adjusted max-width */
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #0fc3ff;
+      padding: 0 2rem;
+      border-radius: 1rem;
+      border: 2px solid transparent;
+      font-weight: bold;
+      font-size: 18px;
+      color: #00234c;
+      cursor: pointer;
+      text-align: center;
+      white-space: nowrap; /* Ensures text doesn't wrap */
+      overflow: hidden; /* Prevents overflow */
+      text-overflow: ellipsis; /* Adds ellipsis for overflow text */
+  }
+
+  @media (max-width: 768px) {
+      .loop-header .loop-title {
+          font-size: 36px;
+      }
+
+      .loop-header .loop-subtitle {
+          font-size: 14px;
+      }
+
+      .loop-form-container {
+          flex-direction: column;
+          align-items: center;
+      }
+
+      .loop-input-field,
+      .loop-submit-button {
+          width: 100%;
+          max-width: 100%;
+      }
+  }
+
+  @media (max-width: 480px) {
+      .loop-header .loop-title {
+          font-size: 28px;
+      }
+
+      .loop-header .loop-subtitle {
+          font-size: 12px;
+      }
+
+      .loop-input-field,
+      .loop-submit-button {
+          width: 100%;
+          max-width: 100%;
+      }
+
+      .loop-submit-button {
+          padding: 0 1rem;
+      }
+  }
+</style>
