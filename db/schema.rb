@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_07_02_235138) do
+ActiveRecord::Schema[7.1].define(version: 2024_07_07_195115) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -89,6 +89,15 @@ ActiveRecord::Schema[7.1].define(version: 2024_07_02_235138) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "contus", force: :cascade do |t|
+    t.string "name"
+    t.string "email"
+    t.string "subject"
+    t.text "message"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "loops", force: :cascade do |t|
     t.string "name"
     t.string "email"
@@ -104,6 +113,13 @@ ActiveRecord::Schema[7.1].define(version: 2024_07_02_235138) do
   end
 
   create_table "stay_in_the_loops", force: :cascade do |t|
+    t.string "name"
+    t.string "email"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "stayintheloops", force: :cascade do |t|
     t.string "name"
     t.string "email"
     t.datetime "created_at", null: false

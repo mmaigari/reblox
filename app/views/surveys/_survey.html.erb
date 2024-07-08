@@ -1,62 +1,74 @@
-<div id="<%= dom_id survey %>">
-  <p>
-    <strong>Email:</strong>
-    <%= survey.email %>
-  </p>
+<div id="<%= dom_id survey %>" class="container p-2 mx-auto sm:p-4 dark:text-gray-800">
+  <div class="overflow-x-auto">
+    <table class="min-w-full text-xs">
+     
+      <thead class="dark:bg-gray-300">
+        <tr class="text-left">
+          <th class="p-3">Email</th>
+          <th class="p-3">Age</th>
+          <th class="p-3">Current Location</th>
+          <th class="p-3">Previously Invested in Real Estate?</th>
+          <th class="p-3 text-right">If So, What?</th>
+          <th class="p-3"> Primary Goals or Objectives</th>
+          <th class="p-3">Main Challenges or Obstacles</th>
+          <th class="p-3">Any existing solutions you're using?</th>
+          <th class="p-3">Ideal Solution to the Problem(s)</th>
+          <th class="p-3">Idea of Investing in Real Estate Assets Digitally</th>
+          <th class="p-3 text-right">How important is liquidity</th>
+          <th class="p-3">Budget Range</th>
+          <th class="p-3">Exclusive Investor's waitlist and gain priority Access</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="border-b border-opacity-20 dark:border-gray-300 dark:bg-gray-50">
+          <td class="p-3">
+            <p><%= survey.email %></p>
+          </td>
+          <td class="p-3">
+            <p><%= survey.age %></p>
+          </td>
+          <td class="p-3">
+            <p><%= survey.location %></p>
+        
+          </td>
+          <td class="p-3">
+            <p><%= survey.invested %></p>
+          
+          </td>
+          <td class="p-3">
+            <p><%= survey.ifso %></p>
+          </td>
+          <td class="p-3">
+            <p><%= survey.goals %></p>
+          </td>
+          <td class="p-3">
+            <p><%= survey.challenge %></p>
+          
+          </td>
+          <td class="p-3">
+            <p><%= survey.solution %></p>
+          </td>
+          <td class="p-3">
+            <p> <%= survey.solution_desc %></p>
+          </td>
+          <td class="p-3">
+            <p><%= survey.comfort %></p>
+          
+          </td>
+          <td class="p-3">
+            <p><%= survey.liquidity %></p>
+          </td>
+          <td class="p-3">
+            <p></p>
+          </td>
+          <td class="p-3">
+            <p><%= survey.ready %></p>
+          
+          </td>
+          
+        </tr>
 
-  <p>
-    <strong>Age:</strong>
-    <%= survey.age %>
-  </p>
-
-  <p>
-    <strong>Location:</strong>
-    <%= survey.location %>
-  </p>
-
-  <p>
-    <strong>Invested:</strong>
-    <%= survey.invested %>
-  </p>
-
-  <p>
-    <strong>Ifso:</strong>
-    <%= survey.ifso %>
-  </p>
-
-  <p>
-    <strong>Goals:</strong>
-    <%= survey.goals %>
-  </p>
-
-  <p>
-    <strong>Challenge:</strong>
-    <%= survey.challenge %>
-  </p>
-
-  <p>
-    <strong>Solution:</strong>
-    <%= survey.solution %>
-  </p>
-
-  <p>
-    <strong>Solution desc:</strong>
-    <%= survey.solution_desc %>
-  </p>
-
-  <p>
-    <strong>Comfort:</strong>
-    <%= survey.comfort %>
-  </p>
-
-  <p>
-    <strong>Liquidity:</strong>
-    <%= survey.liquidity %>
-  </p>
-
-  <p>
-    <strong>Ready:</strong>
-    <%= survey.ready %>
-  </p>
-
+      </tbody>
+    </table>
+  </div>
 </div>

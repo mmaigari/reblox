@@ -1,0 +1,38 @@
+<%= form_with(model: contu) do |form| %>
+  <% if contu.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(contu.errors.count, "error") %> prohibited this contu from being saved:</h2>
+
+      <ul>
+        <% contu.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+  <div class="contact-form-container">
+        <div class="contact-form-group">
+            <label for="name">Full Name</label>
+            
+            <%= form.text_field :name, placeholder:'Enter Name', id:'name' %>
+        </div>
+        <div class="contact-form-group">
+            <label for="email">Email</label>
+            <%= form.email_field :email, placeholder:'Enter Email Address', id:'email' %>
+        </div>
+        <div class="contact-form-group">
+            <label for="name">Subject</label>
+            
+            <%= form.text_field :name, placeholder:'Enter Subject', id:'subject' %>
+        </div>
+        <div class="contact-form-group">
+            <label for="message">Message</label>
+            <%= form.text_area :message, placeholder:'Type message', id:'message' %>
+          
+        </div>
+   
+        <%= form.submit "Contact Us", class:'contact-submit-button'  %>
+    </div>
+    <% end %>

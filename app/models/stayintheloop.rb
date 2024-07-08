@@ -1,0 +1,2 @@
+class Stayintheloop < ApplicationRecord
+end

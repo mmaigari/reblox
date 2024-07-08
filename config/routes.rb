@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :contus
+  resources :stayintheloops
   get 'admin/index'
   get 'admin/dashboard'
   devise_for :administrators

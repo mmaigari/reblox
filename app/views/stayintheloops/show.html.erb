@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @stayintheloop %>
+
+<div>
+  <%= link_to "Edit this stayintheloop", edit_stayintheloop_path(@stayintheloop) %> |
+  <%= link_to "Back to stayintheloops", stayintheloops_path %>
+
+  <%= button_to "Destroy this stayintheloop", @stayintheloop, method: :delete %>
+</div>

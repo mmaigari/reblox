@@ -1,58 +1,28 @@
-<h2></h2>
-
-<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
-  <%= render "devise/shared/error_messages", resource: resource %>
-
-
+<div id="main" >
+ <%= render 'layouts/adminnav' %>
+</div>
 
 
 
 <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20" style="font-family: 'Nunito', sans-serif;">
-  <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-
-    <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-[#04344d] sm:text-4xl md:mx-auto" style="font-family: 'Nunito', sans-serif;">
-      <span class="relative inline-block">
-        
-        <%= image_tag "public/logo-faded.png", class:"absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block" %>
-        
-        <span class="relative">Admin Account Recovery</span>
-      </span>
+  <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-[#04344d] sm:text-4xl md:mx-auto" style="font-family: 'Nunito', sans-serif;">
+    <span class="relative inline-block">
       
-    </h2>
-  <br>
-  <body id="body-loop">
-
-    <div id="bodyloop" class="loop-container">
-      <div class="loop-header">
+      <%= image_tag "public/logo-faded.png", class:"absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block" %>
       
-        <span class="loop-subtitle">Forgot your password?</span>
-    </div>
-    <div class="loop-form-container">
-      <%= f.email_field :email, class:'loop-input-field', placeholder:'Enter Email Address', autofocus: true, autocomplete: "email" %>
-      
-       
-        <%= f.submit "Recover", class:'loop-submit-button'  %>
-<% end %>
-
-
-
-
-    </div>
-</div>
-
-</body>
+      <span class="relative">Contacts: <%= Contu.count %></span>
+    </span>
+    
+  </h2>
+  
+  <div id="surveys">
+    <% @contus.each do |contu| %>
+    <%= render contu %>
+   
+    <% end %>
   </div>
 
 </div>
-
-
-
-
-
-
-
-
-
 
 <style>
   .body-loop {
@@ -104,7 +74,7 @@
   }
 
   .loop-input-field {
-      width: 50%;
+      width: 35%;
       height: 50px;
       display: flex;
       align-items: center;

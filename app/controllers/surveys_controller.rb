@@ -3,6 +3,7 @@ class SurveysController < ApplicationController
 
   # GET /surveys or /surveys.json
   def index
+     @survey_count = Survey.count
     @surveys = Survey.all
   end
 

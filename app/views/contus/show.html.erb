@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @contu %>
+
+<div>
+  <%= link_to "Edit this contu", edit_contu_path(@contu) %> |
+  <%= link_to "Back to contus", contus_path %>
+
+  <%= button_to "Destroy this contu", @contu, method: :delete %>
+</div>
