@@ -25,7 +25,7 @@ class ContusController < ApplicationController
 
     respond_to do |format|
       if @contu.save
-        format.html { redirect_to contu_url(@contu), notice: "Thank you" }
+        format.html { redirect_to root_path, notice: "Thank you" }
         format.json { render :show, status: :created, location: @contu }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class ContusController < ApplicationController
   def update
     respond_to do |format|
       if @contu.update(contu_params)
-        format.html { redirect_to contu_url(@contu), notice: "Contu was successfully updated." }
+        format.html { redirect_to root_path, notice: "successfully updated." }
         format.json { render :show, status: :ok, location: @contu }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class ContusController < ApplicationController
     @contu.destroy!
 
     respond_to do |format|
-      format.html { redirect_to contus_url, notice: "Contu was successfully destroyed." }
+      format.html { redirect_to contus_url, notice: "successfully destroyed." }
       format.json { head :no_content }
     end
   end
