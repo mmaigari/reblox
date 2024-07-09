@@ -38,7 +38,7 @@ class StayintheloopsController < ApplicationController
   def update
     respond_to do |format|
       if @stayintheloop.update(stayintheloop_params)
-        format.html { redirect_to stayintheloop_url(@stayintheloop), notice: "Stayintheloop was successfully updated." }
+        format.html { redirect_to root_path, notice: "successfully updated." }
         format.json { render :show, status: :ok, location: @stayintheloop }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class StayintheloopsController < ApplicationController
     @stayintheloop.destroy!
 
     respond_to do |format|
-      format.html { redirect_to stayintheloops_url, notice: "Stayintheloop was successfully destroyed." }
+      format.html { redirect_to root_path, notice: "successfully destroyed." }
       format.json { head :no_content }
     end
   end
