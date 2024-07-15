@@ -4,8 +4,6 @@
 </div> 
 
 
-<p style="color: green"><%= notice %></p>
-
 <h1 class="px-4 font-bold text-[32px] leading-[32px] text-[#0095d4]">Blogs</h1>
 
 <div id="blogs">
@@ -29,7 +27,7 @@
     </div>
     <a href="https://reblox.app/blog/what">
     <div class="flex flex-col gap-2">
-      <span class="font-bold text-lg text-blue-500">What is Real Estate Tokenization</span>
+      <span class="font-bold text-lg text-[#04344d]">What is Real Estate Tokenization</span>
       <span class="font-normal text-sm text-gray-600">Most articles on real estate tokenization focus heavily on the technical aspects of blockchain and Web 3.0, but it's more valuable to understand how this technology...</span>
     </div>
     <div class="flex justify-center items-center gap-2 text-blue-500 cursor-pointer">
@@ -56,7 +54,7 @@
           <span class="font-normal text-xs text-black">5 min read</span>
         </div>
         <a href="https://reblox.app/blog/future">
-        <span class="font-semibold text-[20px] leading-[32px] text-[#0095d4]">The Future of Real Estate Investment</span>
+        <span class="font-semibold text-[20px] leading-[32px] text-[##04344d]">The Future of Real Estate Investment</span>
         <span class="font-normal text-sm text-[#595959]">In the annals of technological progress, humanity has transitioned from crude methodologies to a digitally-driven world.</span>
         <div class="h-10 flex justify-end items-center gap-2.5">
           <div class="h-10 flex justify-center items-center gap-1 px-2.5 py-[5px] rounded-xl text-blue-500 cursor-pointer">
@@ -83,7 +81,7 @@
           <span class="font-normal text-xs text-black">5 min read</span>
         </div>
         <a href="https://reblox.app/blog/how">
-        <span class="font-semibold text-[20px] leading-[32px] text-[#0095d4]">How to get started</span>
+        <span class="font-semibold text-[20px] leading-[32px] text-[##04344d]">How to get started</span>
         <span class="font-normal text-sm text-[#595959]">As a beginner in real estate tokenization, whether you're skeptical about investing or eager to explore investing in real estate assets through tokens...</span>
         <div class="h-10 flex justify-end items-center gap-2.5">
           <div class="h-10 flex justify-center items-center gap-1 px-2.5 py-[5px] rounded-xl text-blue-500 cursor-pointer">
@@ -104,7 +102,7 @@
        
       <div class="">
 
-    <%= render 'layouts/loop' %>
+    <%= render 'stayintheloops/form', stayintheloop: Stayintheloop.new %>
       </div>
 
  

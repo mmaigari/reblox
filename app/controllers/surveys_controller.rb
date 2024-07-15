@@ -26,7 +26,7 @@ class SurveysController < ApplicationController
 
     respond_to do |format|
       if @survey.save
-        format.html { redirect_to survey_url(@survey), notice: "Survey was successfully created." }
+        format.html { redirect_to survey_url(@survey), notice: "Successful." }
         format.json { render :show, status: :created, location: @survey }
       else
         format.html { render :new, status: :unprocessable_entity }

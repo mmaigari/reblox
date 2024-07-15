@@ -1,6 +1,9 @@
 <div id="main" >
  <%= render 'layouts/nav' %>
 </div> 
+
+
+<%# Hero %>
 <section class="bg-[#00234c] text-white" style="font-family: 'Nunito', sans-serif;">
     <div class="container flex flex-col-reverse lg:flex-row justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:justify-between">
         <div class="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
@@ -41,11 +44,13 @@
 </section>
 
 
-<div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20" style="font-family: 'Nunito', sans-serif;">
+
+<%# About %>
+<div  id="aboutus" class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20" style="font-family: 'Nunito', sans-serif;">
        
       <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
 
-        <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-[#04344d] sm:text-4xl md:mx-auto" style="font-family: 'Nunito', sans-serif;">
+        <h2  class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-[#04344d] sm:text-4xl md:mx-auto" style="font-family: 'Nunito', sans-serif;">
           <span class="relative inline-block">
             
             <%= image_tag "public/logo-faded.png", class:"absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block" %>
@@ -60,130 +65,130 @@
       </div>
 
       
-  <div class="grid gap-8 row-gap-5 lg:grid-cols-3">
-    <div class="relative p-px overflow-hidden transition duration-300 transform border rounded-lg shadow-sm hover:scale-105 group hover:shadow-xl hover:bg-[#00234c] hover:text-white ">
-      <div class="absolute bottom-0 left-0 w-full h-1 duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100"></div>
-      <div class="absolute bottom-0 left-0 w-1 h-full duration-300 origin-bottom transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100"></div>
-      <div class="absolute top-0 left-0 w-full h-1 duration-300 origin-right transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100"></div>
-      <div class="absolute bottom-0 right-0 w-1 h-full duration-300 origin-top transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100"></div>
-      <div class="relative p-5 bg-[#E6E6E6] hover:bg-[#00234c] hover:text-white  rounded-sm">
-        <div class="flex flex-col mb-2 lg:items-center lg:flex-row">
-          <div class="flex items-center justify-center w-10 h-10 mb-4 mr-2 rounded-full bg-indigo-50 lg:mb-0">
-            <svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="37.5" cy="37.5" r="37.5" fill="#DEF4FF"/>
-            <path opacity="0.28" d="M37.4998 14.3517C24.7155 14.3517 14.3517 24.7155 14.3517 37.4998C14.3517 50.2842 24.7155 60.648 37.4998 60.648C50.2842 60.648 60.648 50.2842 60.648 37.4998C60.648 24.7155 50.2842 14.3517 37.4998 14.3517Z" fill="#EFFAFF"/>
-            <path d="M39.1092 28.1982C38.0632 27.8583 36.9364 27.8583 35.8903 28.1982C35.1891 28.426 34.6188 28.8212 34.0939 29.2668C33.5965 29.6891 33.0382 30.2474 32.3911 30.8945L30.8939 32.3917C30.2468 33.0388 29.6885 33.5971 29.2662 34.0945C28.8205 34.6195 28.4254 35.1897 28.1975 35.8909C27.8577 36.937 27.8577 38.0638 28.1975 39.1098C28.4254 39.811 28.8205 40.3813 29.2662 40.9063C29.6885 41.4037 30.2468 41.9619 30.8939 42.609L32.3911 44.1062C33.0382 44.7533 33.5965 45.3116 34.0939 45.7339C34.6188 46.1796 35.1891 46.5748 35.8903 46.8026C36.9364 47.1425 38.0632 47.1425 39.1092 46.8026C39.8104 46.5748 40.3807 46.1796 40.9057 45.7339C41.4031 45.3116 41.9613 44.7534 42.6084 44.1062L44.1056 42.609C44.7527 41.9619 45.311 41.4037 45.7333 40.9063C46.179 40.3813 46.5741 39.811 46.802 39.1098C47.1419 38.0638 47.1419 36.937 46.802 35.8909C46.5741 35.1897 46.179 34.6195 45.7333 34.0945C45.311 33.5971 44.7527 33.0388 44.1056 32.3917L42.6084 30.8945C41.9613 30.2474 41.4031 29.6891 40.9057 29.2668C40.3807 28.8212 39.8104 28.426 39.1092 28.1982Z" fill="#0FC3FF"/>
-            </svg>
+      <div class="grid gap-8 row-gap-5 lg:grid-cols-3">
+        <div class="relative p-px overflow-hidden transition duration-300 transform border rounded-lg shadow-sm hover:scale-105 group hover:shadow-xl  ">
+          <div class="absolute bottom-0 left-0 w-full h-1 duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100"></div>
+          <div class="absolute bottom-0 left-0 w-1 h-full duration-300 origin-bottom transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100"></div>
+          <div class="absolute top-0 left-0 w-full h-1 duration-300 origin-right transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100"></div>
+          <div class="absolute bottom-0 right-0 w-1 h-full duration-300 origin-top transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100"></div>
+          <div class="relative p-5 bg-[#E6E6E6]  rounded-sm">
+            <div class="flex flex-col mb-2 lg:items-center lg:flex-row">
+              <div class="flex items-center justify-center w-10 h-10 mb-4 mr-2 rounded-full bg-indigo-50 lg:mb-0">
+                <svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="37.5" cy="37.5" r="37.5" fill="#DEF4FF"/>
+                <path opacity="0.28" d="M37.4998 14.3517C24.7155 14.3517 14.3517 24.7155 14.3517 37.4998C14.3517 50.2842 24.7155 60.648 37.4998 60.648C50.2842 60.648 60.648 50.2842 60.648 37.4998C60.648 24.7155 50.2842 14.3517 37.4998 14.3517Z" fill="#EFFAFF"/>
+                <path d="M39.1092 28.1982C38.0632 27.8583 36.9364 27.8583 35.8903 28.1982C35.1891 28.426 34.6188 28.8212 34.0939 29.2668C33.5965 29.6891 33.0382 30.2474 32.3911 30.8945L30.8939 32.3917C30.2468 33.0388 29.6885 33.5971 29.2662 34.0945C28.8205 34.6195 28.4254 35.1897 28.1975 35.8909C27.8577 36.937 27.8577 38.0638 28.1975 39.1098C28.4254 39.811 28.8205 40.3813 29.2662 40.9063C29.6885 41.4037 30.2468 41.9619 30.8939 42.609L32.3911 44.1062C33.0382 44.7533 33.5965 45.3116 34.0939 45.7339C34.6188 46.1796 35.1891 46.5748 35.8903 46.8026C36.9364 47.1425 38.0632 47.1425 39.1092 46.8026C39.8104 46.5748 40.3807 46.1796 40.9057 45.7339C41.4031 45.3116 41.9613 44.7534 42.6084 44.1062L44.1056 42.609C44.7527 41.9619 45.311 41.4037 45.7333 40.9063C46.179 40.3813 46.5741 39.811 46.802 39.1098C47.1419 38.0638 47.1419 36.937 46.802 35.8909C46.5741 35.1897 46.179 34.6195 45.7333 34.0945C45.311 33.5971 44.7527 33.0388 44.1056 32.3917L42.6084 30.8945C41.9613 30.2474 41.4031 29.6891 40.9057 29.2668C40.3807 28.8212 39.8104 28.426 39.1092 28.1982Z" fill="#0FC3FF"/>
+                </svg>
 
 
 
 
+              </div>
+              
+            </div>
+           
+            <br>
+            <svg width="87" height="16" viewBox="0 0 87 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM86.7071 8.70711C87.0976 8.31658 87.0976 7.68342 86.7071 7.29289L80.3431 0.928932C79.9526 0.538408 79.3195 0.538408 78.9289 0.928932C78.5384 1.31946 78.5384 1.95262 78.9289 2.34315L84.5858 8L78.9289 13.6569C78.5384 14.0474 78.5384 14.6805 78.9289 15.0711C79.3195 15.4616 79.9526 15.4616 80.3431 15.0711L86.7071 8.70711ZM1 9H86V7H1V9Z" fill="#008000"/>
+              </svg>
+              <br>
+               <div>
+              <h6 class="font-semibold leading-5"style="font-family: 'Nunito', sans-serif;"> Our Mission</h6>
+
+            </div>
+              <br>
+
+            <p class="mb-2 text-sm "style="font-family: 'Nunito', sans-serif;">
+              To democratize global real estate access and empower individuals to control their financial future. 
+            </p>
+            
           </div>
-          
-        </div>
-       
-        <br>
-        <svg width="87" height="16" viewBox="0 0 87 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM86.7071 8.70711C87.0976 8.31658 87.0976 7.68342 86.7071 7.29289L80.3431 0.928932C79.9526 0.538408 79.3195 0.538408 78.9289 0.928932C78.5384 1.31946 78.5384 1.95262 78.9289 2.34315L84.5858 8L78.9289 13.6569C78.5384 14.0474 78.5384 14.6805 78.9289 15.0711C79.3195 15.4616 79.9526 15.4616 80.3431 15.0711L86.7071 8.70711ZM1 9H86V7H1V9Z" fill="#008000"/>
-          </svg>
-          <br>
-           <div>
-          <h6 class="font-semibold leading-5"style="font-family: 'Nunito', sans-serif;"> Our Mission</h6>
+        </div>  
 
-        </div>
-          <br>
-
-        <p class="mb-2 text-sm "style="font-family: 'Nunito', sans-serif;">
-          To democratize global real estate access and empower individuals to control their financial future. 
-        </p>
-        
-      </div>
-    </div>  
-
-    <div class="relative p-px overflow-hidden transition duration-300 transform border rounded-lg shadow-sm hover:scale-105 group hover:shadow-xl hover:bg-[#00234c] hover:text-white">
-      <div class="absolute bottom-0 left-0 w-full h-1 duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100"></div>
-      <div class="absolute bottom-0 left-0 w-1 h-full duration-300 origin-bottom transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100"></div>
-      <div class="absolute top-0 left-0 w-full h-1 duration-300 origin-right transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100"></div>
-      <div class="absolute bottom-0 right-0 w-1 h-full duration-300 origin-top transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100"></div>
-      <div class="relative p-5 bg-[#E6E6E6] hover:bg-[#00234c] hover:text-white rounded-sm">
-        <div class="flex flex-col mb-2 lg:items-center lg:flex-row">
-          <div class="flex items-center justify-center w-10 h-10 mb-4 mr-2 rounded-full bg-indigo-50 lg:mb-0">
-            <svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="37.5" cy="37.5" r="37.5" fill="#DEF4FF"/>
-            <path opacity="0.28" d="M41.3653 39.4727L43 47.0003C38.7136 44.3361 35.2864 44.3361 31 47.0003L32.6347 39.4727" stroke="#00234C" stroke-width="2.41901" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M36.9999 26.0001C32.5817 26.0001 28.9999 29.5818 28.9999 34.0001C28.9999 38.4183 32.5817 42.0001 36.9999 42.0001C41.4182 42.0001 44.9999 38.4183 44.9999 34.0001C44.9999 29.5818 41.4182 26.0001 36.9999 26.0001Z" fill="#0FC3FF"/>
-            </svg>
+        <div class="relative p-px overflow-hidden transition duration-300 transform border rounded-lg shadow-sm hover:scale-105 group hover:shadow-xl ">
+          <div class="absolute bottom-0 left-0 w-full h-1 duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100"></div>
+          <div class="absolute bottom-0 left-0 w-1 h-full duration-300 origin-bottom transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100"></div>
+          <div class="absolute top-0 left-0 w-full h-1 duration-300 origin-right transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100"></div>
+          <div class="absolute bottom-0 right-0 w-1 h-full duration-300 origin-top transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100"></div>
+          <div class="relative p-5 bg-[#E6E6E6] rounded-sm">
+            <div class="flex flex-col mb-2 lg:items-center lg:flex-row">
+              <div class="flex items-center justify-center w-10 h-10 mb-4 mr-2 rounded-full bg-indigo-50 lg:mb-0">
+                <svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="37.5" cy="37.5" r="37.5" fill="#DEF4FF"/>
+                <path opacity="0.28" d="M41.3653 39.4727L43 47.0003C38.7136 44.3361 35.2864 44.3361 31 47.0003L32.6347 39.4727" stroke="#00234C" stroke-width="2.41901" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M36.9999 26.0001C32.5817 26.0001 28.9999 29.5818 28.9999 34.0001C28.9999 38.4183 32.5817 42.0001 36.9999 42.0001C41.4182 42.0001 44.9999 38.4183 44.9999 34.0001C44.9999 29.5818 41.4182 26.0001 36.9999 26.0001Z" fill="#0FC3FF"/>
+                </svg>
 
 
 
 
+              </div>
+              
+            </div>
+           
+            <br>
+            <svg width="87" height="16" viewBox="0 0 87 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM86.7071 8.70711C87.0976 8.31658 87.0976 7.68342 86.7071 7.29289L80.3431 0.928932C79.9526 0.538408 79.3195 0.538408 78.9289 0.928932C78.5384 1.31946 78.5384 1.95262 78.9289 2.34315L84.5858 8L78.9289 13.6569C78.5384 14.0474 78.5384 14.6805 78.9289 15.0711C79.3195 15.4616 79.9526 15.4616 80.3431 15.0711L86.7071 8.70711ZM1 9H86V7H1V9Z" fill="#008000"/>
+              </svg>
+              <br>
+               <div>
+              <h6 class="font-semibold leading-5 " style="font-family: 'Nunito', sans-serif;"> Our Vision</h6>
+
+            </div>
+              <br>
+
+            <p class="mb-2 text-sm ">
+              To be the world’s premier leader, offering unparalleled security, accessibility and affordability in fractional investment solutions for real estate assets across the globe.
+            </p>
+            
           </div>
-          
-        </div>
-       
-        <br>
-        <svg width="87" height="16" viewBox="0 0 87 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM86.7071 8.70711C87.0976 8.31658 87.0976 7.68342 86.7071 7.29289L80.3431 0.928932C79.9526 0.538408 79.3195 0.538408 78.9289 0.928932C78.5384 1.31946 78.5384 1.95262 78.9289 2.34315L84.5858 8L78.9289 13.6569C78.5384 14.0474 78.5384 14.6805 78.9289 15.0711C79.3195 15.4616 79.9526 15.4616 80.3431 15.0711L86.7071 8.70711ZM1 9H86V7H1V9Z" fill="#008000"/>
-          </svg>
-          <br>
-           <div>
-          <h6 class="font-semibold leading-5 " style="font-family: 'Nunito', sans-serif;"> Our Vision</h6>
+        </div>   
 
-        </div>
-          <br>
-
-        <p class="mb-2 text-sm ">
-          To be the world’s premier leader, offering unparalleled security, accessibility and affordability in fractional investment solutions for real estate assets across the globe.
-        </p>
-        
-      </div>
-    </div>   
-
-    <div class="relative p-px overflow-hidden transition duration-300 transform border rounded-lg shadow-sm hover:scale-105 group hover:shadow-xl hover:bg-[#00234c] hover:text-white">
-      <div class="absolute bottom-0 left-0 w-full h-1 duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100"></div>
-      <div class="absolute bottom-0 left-0 w-1 h-full duration-300 origin-bottom transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100"></div>
-      <div class="absolute top-0 left-0 w-full h-1 duration-300 origin-right transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100"></div>
-      <div class="absolute bottom-0 right-0 w-1 h-full duration-300 origin-top transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100"></div>
-      <div class="relative p-5 bg-[#E6E6E6] hover:bg-[#00234c] hover:text-white rounded-sm">
-        <div class="flex flex-col mb-2 lg:items-center lg:flex-row">
-          <div class="flex items-center justify-center w-10 h-10 mb-4 mr-2 rounded-full bg-indigo-50 lg:mb-0">
-            <svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="37.5" cy="37.5" r="37.5" fill="#DEF4FF"/>
-            <path opacity="0.28" d="M37.4998 14.3517C24.7155 14.3517 14.3517 24.7155 14.3517 37.4998C14.3517 50.2842 24.7155 60.648 37.4998 60.648C50.2842 60.648 60.648 50.2842 60.648 37.4998C60.648 24.7155 50.2842 14.3517 37.4998 14.3517Z" fill="#E9FAFF"/>
-            <path opacity="0.28" d="M35.1742 40.8334H31.3333C27.4213 40.8334 24.25 44.0047 24.25 47.9167C24.25 50.2639 26.1528 52.1667 28.5 52.1667H37.8241C36.2171 50.66 34.1667 48.0766 34.1667 44.5915C34.1667 43.1674 34.5438 41.9021 35.1742 40.8334Z" fill="#00234C"/>
-            <path d="M29.9166 30.9167C29.9166 27.0047 33.0879 23.8334 37 23.8334C40.912 23.8334 44.0833 27.0047 44.0833 30.9167C44.0833 34.8287 40.912 38 37 38C33.0879 38 29.9166 34.8287 29.9166 30.9167Z" fill="#0FC3FF"/>
-            <path d="M44.0789 40.4679C44.8054 40.0204 45.6211 39.859 46.3699 39.8696C48.7023 39.9024 51.1666 41.754 51.1666 44.5915C51.1666 47.144 49.5037 49.1552 48.0589 50.412C47.3083 51.0649 46.5399 51.5825 45.9102 51.942C45.5958 52.1215 45.301 52.2702 45.0466 52.379C44.9206 52.4329 44.7881 52.4841 44.6578 52.5243C44.5619 52.5538 44.3406 52.6191 44.0833 52.6191C43.826 52.6191 43.6047 52.5538 43.5088 52.5243C43.3785 52.4841 43.246 52.4329 43.12 52.379C42.8656 52.2702 42.5708 52.1215 42.2564 51.942C41.6267 51.5825 40.8583 51.0649 40.1077 50.412C38.6629 49.1552 37 47.144 37 44.5915C37 41.7695 39.4505 39.8694 41.8166 39.8694C42.5346 39.8694 43.3478 40.0236 44.0789 40.4679Z" fill="#0FC3FF"/>
-            </svg>
+        <div class="relative p-px overflow-hidden transition duration-300 transform border rounded-lg shadow-sm hover:scale-105 group hover:shadow-xl ">
+          <div class="absolute bottom-0 left-0 w-full h-1 duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100"></div>
+          <div class="absolute bottom-0 left-0 w-1 h-full duration-300 origin-bottom transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100"></div>
+          <div class="absolute top-0 left-0 w-full h-1 duration-300 origin-right transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100"></div>
+          <div class="absolute bottom-0 right-0 w-1 h-full duration-300 origin-top transform scale-y-0 bg-deep-purple-accent-400 group-hover:scale-y-100"></div>
+          <div class="relative p-5 bg-[#E6E6E6] rounded-sm">
+            <div class="flex flex-col mb-2 lg:items-center lg:flex-row">
+              <div class="flex items-center justify-center w-10 h-10 mb-4 mr-2 rounded-full bg-indigo-50 lg:mb-0">
+                <svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="37.5" cy="37.5" r="37.5" fill="#DEF4FF"/>
+                <path opacity="0.28" d="M37.4998 14.3517C24.7155 14.3517 14.3517 24.7155 14.3517 37.4998C14.3517 50.2842 24.7155 60.648 37.4998 60.648C50.2842 60.648 60.648 50.2842 60.648 37.4998C60.648 24.7155 50.2842 14.3517 37.4998 14.3517Z" fill="#E9FAFF"/>
+                <path opacity="0.28" d="M35.1742 40.8334H31.3333C27.4213 40.8334 24.25 44.0047 24.25 47.9167C24.25 50.2639 26.1528 52.1667 28.5 52.1667H37.8241C36.2171 50.66 34.1667 48.0766 34.1667 44.5915C34.1667 43.1674 34.5438 41.9021 35.1742 40.8334Z" fill="#00234C"/>
+                <path d="M29.9166 30.9167C29.9166 27.0047 33.0879 23.8334 37 23.8334C40.912 23.8334 44.0833 27.0047 44.0833 30.9167C44.0833 34.8287 40.912 38 37 38C33.0879 38 29.9166 34.8287 29.9166 30.9167Z" fill="#0FC3FF"/>
+                <path d="M44.0789 40.4679C44.8054 40.0204 45.6211 39.859 46.3699 39.8696C48.7023 39.9024 51.1666 41.754 51.1666 44.5915C51.1666 47.144 49.5037 49.1552 48.0589 50.412C47.3083 51.0649 46.5399 51.5825 45.9102 51.942C45.5958 52.1215 45.301 52.2702 45.0466 52.379C44.9206 52.4329 44.7881 52.4841 44.6578 52.5243C44.5619 52.5538 44.3406 52.6191 44.0833 52.6191C43.826 52.6191 43.6047 52.5538 43.5088 52.5243C43.3785 52.4841 43.246 52.4329 43.12 52.379C42.8656 52.2702 42.5708 52.1215 42.2564 51.942C41.6267 51.5825 40.8583 51.0649 40.1077 50.412C38.6629 49.1552 37 47.144 37 44.5915C37 41.7695 39.4505 39.8694 41.8166 39.8694C42.5346 39.8694 43.3478 40.0236 44.0789 40.4679Z" fill="#0FC3FF"/>
+                </svg>
 
 
 
+              </div>
+              
+            </div>
+           
+            <br>
+            <svg width="87" height="16" viewBox="0 0 87 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM86.7071 8.70711C87.0976 8.31658 87.0976 7.68342 86.7071 7.29289L80.3431 0.928932C79.9526 0.538408 79.3195 0.538408 78.9289 0.928932C78.5384 1.31946 78.5384 1.95262 78.9289 2.34315L84.5858 8L78.9289 13.6569C78.5384 14.0474 78.5384 14.6805 78.9289 15.0711C79.3195 15.4616 79.9526 15.4616 80.3431 15.0711L86.7071 8.70711ZM1 9H86V7H1V9Z" fill="#008000"/>
+              </svg>
+              <br>
+               <div>
+              <h6 class="font-semibold  leading-5"> Our Values</h6>
+
+            </div>
+              <br>
+
+            <p class="mb-2 text-sm">
+              Together we strive to deliver a reliable product and services, foster a resilient team, and cultivate a relatable experience for our customers. 
+            </p>
+            
           </div>
-          
-        </div>
-       
-        <br>
-        <svg width="87" height="16" viewBox="0 0 87 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM86.7071 8.70711C87.0976 8.31658 87.0976 7.68342 86.7071 7.29289L80.3431 0.928932C79.9526 0.538408 79.3195 0.538408 78.9289 0.928932C78.5384 1.31946 78.5384 1.95262 78.9289 2.34315L84.5858 8L78.9289 13.6569C78.5384 14.0474 78.5384 14.6805 78.9289 15.0711C79.3195 15.4616 79.9526 15.4616 80.3431 15.0711L86.7071 8.70711ZM1 9H86V7H1V9Z" fill="#008000"/>
-          </svg>
-          <br>
-           <div>
-          <h6 class="font-semibold  leading-5"> Our Values</h6>
-
-        </div>
-          <br>
-
-        <p class="mb-2 text-sm">
-          Together we strive to deliver a reliable product and services, foster a resilient team, and cultivate a relatable experience for our customers. 
-        </p>
-        
+        </div>    
       </div>
-    </div>    
-  </div>
-   </div>
 </div>
 
 
 
+<%# Intro %>
 <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20" style="font-family: 'Nunito', sans-serif;">
   <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
 
@@ -200,22 +205,22 @@
       Unlock the Real Future with Reblox
     </p>
   </div>
-  <div  class="mx-auto lg:max-w-2xl">
-    
-</div>
-<script src="https://fast.wistia.com/embed/medias/8ofss99b1q.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-<div class="wistia_responsive_padding rounded-lg" style="padding:56.25% 0 0 0;position:relative;">
-  <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
-    <div class="wistia_embed wistia_async_8ofss99b1q autoPlay=true seo=true videoFoam=true" style="height:100%;position:relative;width:100%">
-      <div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
-        <img class="rounded-lg" src="https://fast.wistia.com/embed/medias/8ofss99b1q/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" />
-</div>
-</div>
-</div>
+
+  
+  <div class="wistia_responsive_padding rounded-lg" style="padding:56.25% 0 0 0;position:relative;">
+    <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+      <div class="wistia_embed wistia_async_8ofss99b1q seo=true videoFoam=true" style="height:100%;position:relative;width:100%">
+        <div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
+          <img class="rounded-lg" src="https://fast.wistia.com/embed/medias/8ofss99b1q/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" />
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
-</div>
 
+
+<%# Highlights %>
 <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20" style="font-family: 'Nunito', sans-serif;">
   <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
 
@@ -326,18 +331,111 @@
       </p>
     </div>
   </div>
-<!--   <div class="text-center">
-    <a
-      href="/"
-      class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-    >
-      Learn more
-    </a>
-  </div> -->
 </div>
 
-        <%= render 'layouts/success' %>
-  
+
+
+ <%# success %>
+ <div id="success" class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-20 lg:pb-0" style="font-family: 'Nunito', sans-serif;">
+     <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+       <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-[#04344d] sm:text-4xl md:mx-auto" style="font-family: 'Nunito', sans-serif;">
+         <span class="relative inline-block">
+           <%= image_tag "public/logo-faded.png", class:"absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block" %>
+           <span class="relative" style="font-family: 'Nunito', sans-serif;">Real Estate Tokenization Success Stories</span>
+         </span>
+       </h2>
+     </div>
+     <div class="container mx-auto p-4">
+       <div class="flex flex-wrap">
+         <div class="w-full md:w-1/2 p-2">
+           <div class="p-4 rounded-lg shadow-lg">
+             <%= image_tag 'public/regis.png', class: "rounded-lg h-64 object-cover", id: 'left-image' %>
+           </div>
+         </div>
+         <div class="w-full md:w-1/2 p-2">
+           <div class="p-4 rounded-lg shadow-lg">
+             <div class="p-6 rounded-lg w-full lg:w-[90%]">
+                   <hr class="mb-4">
+                   <div class="flex items-center space-x-2 mb-4">
+                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       <circle cx="8" cy="8" r="8" fill="#6BE5FF"/>
+                     </svg>
+                     <h2 class="text-2xl font-bold text-[#04344d]">The St. Regis Resort in Aspen, Colorado</h2>
+                   </div>
+                   <hr class="mb-4">
+                   <p class="the-first-major text-justify text-[#04344d]">The first major asset in Manhattan to be tokenized on Ethereum, appraised at over $30M. With condominium prices soaring and a lengthy purchase process, cryptocurrencies offer a streamlined alternative.</p>
+                   <br>
+                   <p class="investors-can-choose text-justify text-[#04344d]">Investors can choose between analog or digital interests in the securities, ensuring flexibility for buyers. Profits from token trading and regular rental income from high demand in NYC bolster investor returns.</p>
+                 </div>
+           </div>
+         </div>
+         <div class="w-full md:w-1/2 p-2">
+           <div class="p-4 rounded-lg shadow-lg">
+             <%= image_tag 'public/12.png', class: "rounded-lg h-64 object-cover", id: 'left-image' %>
+           </div>
+         </div>
+         <div class="w-full md:w-1/2 p-2">
+           <div class="p-4 rounded-lg shadow-lg">
+             <div class="p-6 rounded-lg w-full lg:w-[90%]">
+                   <hr class="mb-4">
+                   <div class="flex items-center space-x-2 mb-4">
+                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       <circle cx="8" cy="8" r="8" fill="#6BE5FF"/>
+                     </svg>
+                     <h2 class="text-2xl font-bold text-[#04344d]">The 12-unit building at 436 & 442E 13th St in the East Village, Manhattan</h2>
+                   </div>
+                   <hr class="mb-4">
+                   <p class="the-first-major text-justify text-[#04344d]">The first major asset in Manhattan to be tokenized on Ethereum, appraised at over $30M. With condominium prices soaring and a lengthy purchase process, cryptocurrencies offer a streamlined alternative.</p>
+                   <br>
+                   <p class="investors-can-choose text-justify text-[#04344d]">Investors can choose between analog or digital interests in the securities, ensuring flexibility for buyers. Profits from token trading and regular rental income from high demand in NYC bolster investor returns.</p>
+                 </div>
+           </div>
+         </div>
+         <div class="w-full md:w-1/2 p-2">
+           <div class="p-4 rounded-lg shadow-lg">
+             <%= image_tag 'public/bar.png', class: "rounded-lg h-64 object-cover", id: 'left-image' %>
+           </div>
+         </div>
+         <div class="w-full md:w-1/2 p-2">
+           <div class="p-4 rounded-lg shadow-lg">
+             <div class="p-6 rounded-lg w-full lg:w-[90%]">
+                   <hr class="mb-4">
+                   <div class="flex items-center space-x-2 mb-4">
+                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       <circle cx="8" cy="8" r="8" fill="#6BE5FF"/>
+                     </svg>
+                     <h2 class="text-2xl font-bold text-[#04344d]">Swiss City of Baar</h2>
+                   </div>
+                   <hr class="mb-4">
+                   <p class="the-first-major text-justify text-[#04344d]">A real estate deal in the Swiss city of Baar, featuring 18 flats at Grabenstrasse 3 and a restaurant named "Hello World," was tokenized for approximately $3.2 million USD. The total token value of 3 million CHF, roughly $3.2 million USD, equates to 20% of the property's total value. Four investors acquired all tokens in a club sale through four separate transactions on the Ethereum network. This transaction functioned as a Security Token Offering, representing property ownership under Swiss law, despite not being linked to a company.</p>
+                 </div>
+           </div>
+         </div>
+         <div class="w-full md:w-1/2 p-2">
+           <div class="p-4 rounded-lg shadow-lg">
+             <%= image_tag 'public/anna.png', class: "rounded-lg h-64 object-cover", id: 'left-image' %>
+           </div>
+         </div>
+         <div class="w-full md:w-1/2 p-2">
+           <div class="p-4 rounded-lg shadow-lg">
+             <div class="p-6 rounded-lg w-full lg:w-[90%]">
+                   <hr class="mb-4">
+                   <div class="flex items-center space-x-2 mb-4">
+                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       <circle cx="8" cy="8" r="8" fill="#6BE5FF"/>
+                     </svg>
+                     <h2 class="text-2xl font-bold text-[#04344d]">The AnnA Villa in Paris</h2>
+                   </div>
+                   <hr class="mb-4">
+                   <p class="the-first-major text-justify text-[#04344d]">The AnnA Villa in Paris made history as the first European property sold entirely through blockchain. Valued at €6.5 million, the luxury building in Boulogne-Billancourt was purchased by French real estate firms, Sapeb Immobilier and Valorcim.</p>
+                   <br>
+                   <p class="investors-can-choose text-justify text-[#04344d]">The process involved transferring ownership to a joint-stock company (SAPEB AnnA) and dividing it into 100 tokens, each subdivided into 100,000 units and traded for €6.50 each. This Ethereum-powered tokenized sale is part of global efforts to integrate real estate transactions with blockchain technology.</p>
+                 </div>
+           </div>
+         </div>
+       </div>
+     </div>
+ </div>
 
 <!-- accord -->
 
@@ -500,112 +598,542 @@
     </div>
     </div>
     <br>    <br>    <br>
-    <%= render 'layouts/loop' %>
+<%= render 'stayintheloops/form', stayintheloop: Stayintheloop.new %>
     
 </div>
 
 
 
+<%# blogs %>
+<div id="blog-section" class="blog-container" style="font-family: 'Nunito', sans-serif;">
+    <div id="blogs" class="blog-header">
+        <span class="blog-title text-[#04344d]">Blog</span>
+        <span class="blog-subtitle">Discover</span>
+    </div>
+    <div class="blog-list">
+    
+        <div class="blog-item">
+              <a href="/blog/what">
+            <%= image_tag "wr.jpg", class:"" %>
+            <div class="blog-details">
+                <div class="blog-meta">
+                    <div class="mt-2 blog-category bg-[#70EB6D]">Category</div>
+                    <span class="blog-read-time">5 min read</span>
+                </div>
+                <div class="blog-title">What is Real Estate Tokenization</div>
+                <div class="blog-excerpt">Most articles on real estate tokenization focus heavily on the technical aspects of blockchain and Web 3.0, but it's more valuable to understand how this technology...</div>
+            </div>
+            <div class="blog-read-more">
+                <span>Read more</span>
+                <div class="w-6 h-6">
+                    <svg class="w-4 h-4 text-[#0095d4]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M10 17l5-5-5-5v10z"/></svg>
+                </div>
+            </div>
+             </a>
+        </div>
+     
+    
+        <div class="blog-item">
+           <a href="/blog/future">
+            <%= image_tag "tf.jpg", class:"" %>
+            <div class="blog-details">
+                <div class="blog-meta">
+                    <div class="mt-2 blog-category bg-[#70EB6D]">Category</div>
+                    <span class="blog-read-time">5 min read</span>
+                </div>
+                <div class="blog-title">The Future of Real Estate Investment</div>
+                <div class="blog-excerpt">In the annals of technological progress, humanity has transitioned from crude methodologies to a digitally-driven world.</div>
+            </div>
+            <div class="blog-read-more">
+                <span>Read more</span>
+                <div class="w-6 h-6">
+                    <svg class="w-4 h-4 text-[#0095d4]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M10 17l5-5-5-5v10z"/></svg>
+                </div>
+            </div>
+        </a>
+        </div>
+   
+   
+        <div class="blog-item">
+            <a href="/blog/how">
+            <%= image_tag "abc.png", class:"" %>
+            <div class="blog-details">
+                <div class="blog-meta">
+                    <div class="mt-2 blog-category bg-[#70EB6D]">Category</div>
+                    <span class="blog-read-time">5 min read</span>
+                </div>
+                <div class="blog-title">How to get started</div>
+                <div class="blog-excerpt">As a beginner in real estate tokenization, whether you're skeptical about investing or eager to explore investing in real estate assets through tokens...</div>
+            </div>
+            <div class="blog-read-more">
+                <span>Read more</span>
+                <div class="w-6 h-6">
+                    <svg class="w-4 h-4 text-[#0095d4]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M10 17l5-5-5-5v10z"/></svg>
+                </div>
+            </div>
+            </a>
+        </div>
 
-<%= render 'layouts/blog' %>
+    </div>
+</div>
 
-<div></div>
-<%= render 'layouts/contact' %>
 
-<br>
 
+<%# contact %>
+<a id="contu_form"></a>
+<%= render 'contus/form', contu: Contu.new %>
+
+
+<%# footer %>
 <%= render 'layouts/footer' %>
+<%# <%= render 'layouts/blog' %>
 
-  <style>
-      .floating-toast {
-          position: fixed;
-          top: 75%;
-          right: 20px; /* Adjust distance from right edge */
-          transform: translateY(-50%);
-          background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
-          padding: 10px 20px;
-          border-radius: 10px;
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
-          display: flex;
-          align-items: center;
-          cursor: pointer;
-          transition: background-color 0.3s ease;
-          width: 250px;
+<%# <div></div> %>
+<%# <%= render 'layouts/contact' %> %>
+
+<%# <br> %>
+
+<%# blogs %>
+<style>
+       .blogs {
+           margin: 0;
+           font-family: Arial, sans-serif;
+       }
+
+       .blog-container {
+           display: flex;
+           flex-direction: column;
+           gap: 2.5rem;
+           padding: 50px 65px;
+       }
+
+       .blog-header {
+           display: flex;
+           flex-direction: column;
+           gap: 1rem;
+           align-items: center;
+       }
+
+       .blog-header .blog-title {
+           font-weight: bold;
+           font-size: 48px;
+           color: black;
+       }
+
+       .blog-header .blog-subtitle {
+           font-weight: normal;
+           font-size: 16px;
+           color: black;
+       }
+
+       .blog-list {
+           display: flex;
+           flex-direction: column;
+           gap: 4rem;
+       }
+
+       .blog-item {
+           display: flex;
+           flex-direction: column;
+           gap: 1.5rem;
+           flex: 1;
+       }
+
+       .blog-item img {
+           height: 300px;
+           width: 100%;
+           object-fit: cover;
+           border-radius: 8px;
+       }
+
+       .blog-details {
+           display: flex;
+           flex-direction: column;
+           gap: 1rem;
+       }
+
+       .blog-meta {
+           display: flex;
+           align-items: center;
+           gap: 1rem;
+       }
+
+       .blog-meta .blog-category {
+           background-color: #def4ff;
+           padding: 0.5rem 1rem;
+           border-radius: 0.5rem;
+           font-weight: bold;
+           font-size: 14px;
+           color: black;
+       }
+
+       .blog-meta .blog-read-time {
+           font-weight: bold;
+           font-size: 14px;
+           color: black;
+       }
+
+       .blog-title {
+           font-weight: bold;
+           font-size: 24px;
+           color: #04344D;
+       }
+
+       .blog-excerpt {
+           font-size: 16px;
+           color: black;
+       }
+
+       .blog-read-more {
+           display: flex;
+           align-items: center;
+           gap: 0.5rem;
+           font-size: 16px;
+           color: #04344D;
+           cursor: pointer;
+       }
+
+       @media (min-width: 768px) {
+           .blog-list {
+               flex-direction: row;
+               flex-wrap: wrap;
+           }
+
+           .blog-item {
+               max-width: 30%;
+               margin: 0 1rem;
+           }
+       }
+
+       @media (max-width: 767px) {
+           .blog-header .blog-title {
+               font-size: 36px;
+           }
+
+           .blog-header .blog-subtitle {
+               font-size: 14px;
+           }
+       }
+
+       @media (max-width: 480px) {
+           .blog-header .blog-title {
+               font-size: 28px;
+           }
+
+           .blog-header .blog-subtitle {
+               font-size: 12px;
+           }
+       }
+</style>
+
+<%# contactus %>
+<style type="text/css">
+    .cbody {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
+        padding: 20px;
+    }
+
+    .contact-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .contact-header .contact-title {
+        font-weight: bold;
+        font-size: 36px;
+        color: #00234c;
+    }
+
+    .contact-header .contact-subtitle {
+        font-weight: normal;
+        font-size: 16px;
+        color: black;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .contact-info .contact-email {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-size: 16px;
+        color: black;
+    }
+
+    .contact-form-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        width: 100%;
+        max-width: 616px;
+    }
+
+    .contact-form-group {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .contact-form-group label {
+        font-size: 16px;
+        color: #00234c;
+    }
+
+    .contact-form-group input,
+    .contact-form-group textarea {
+        width: 100%;
+        padding: 0.75rem;
+        border: 1px solid #8c8c8c;
+        border-radius: 0.5rem;
+        font-size: 14px;
+        color: #8c8c8c;
+    }
+
+    .contact-form-group textarea {
+        resize: vertical;
+        height: 100px;
+    }
+
+    .contact-submit-button {
+        width: 100%;
+        max-width: 206px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #0fc3ff;
+        border-radius: 1rem;
+        font-weight: bold;
+        font-size: 18px;
+        color: #00234c;
+        cursor: pointer;
+        text-align: center;
+        border: 2px solid transparent;
+    }
+
+    @media (max-width: 768px) {
+        .contact-header .contact-title {
+            font-size: 30px;
+        }
+
+        .contact-header .contact-subtitle {
+            font-size: 14px;
+        }
+
+        .contact-form-container {
+            padding: 0 10px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .contact-header .contact-title {
+            font-size: 24px;
+        }
+
+        .contact-header .contact-subtitle {
+            font-size: 12px;
+        }
+
+        .contact-form-group input,
+        .contact-form-group textarea {
+            font-size: 12px;
+            padding: 0.5rem;
+        }
+
+        .contact-submit-button {
+            font-size: 16px;
+            padding: 0.5rem;
+        }
+    }
+</style>
+
+<div class="floating-toast" id="toast">
+    <div class="toast-content">
+        <div class="toast-text" style="font-family: 'Nunito', sans-serif;">
+            Please take our survey to help us serve you better and improve our platform.
+        </div>
+    </div>
+    <div class="arrow-icon">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="20" fill="#E7F3E7"/>
+            <path d="M25 28C25 27.258 25.733 26.15 26.475 25.22C27.429 24.02 28.569 22.973 29.876 22.174C30.856 21.575 32.044 21 33 21M33 21C32.044 21 30.855 20.425 29.876 19.826C28.569 19.026 27.429 17.979 26.475 16.781C25.733 15.85 25 14.74 25 14M33 21L9 21" stroke="#12A00F"/>
+        </svg>
+    </div>
+    <div class="close-icon">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="20" fill="#FFE7E7"/>
+            <path d="M25 15L15 25M15 15L25 25" stroke="#FF0000" stroke-width="2"/>
+        </svg>
+    </div>
+    <div class="survey-icon">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="10" cy="10" r="10" fill="white"/>
+            <path d="M14 7H6V9H14V7ZM14 11H6V13H14V11ZM10 15H6V17H10V15Z" fill="black"/>
+        </svg>
+    </div>
+</div>
+
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function() {
+      const toast = document.getElementById('toast');
+      const closeIcon = document.querySelector('.close-icon');
+      const surveyIcon = document.querySelector('.survey-icon');
+      
+      if (toast) {
+          setTimeout(() => {
+              closeIcon.click();
+          }, 10000); // Automatically fold after 10 seconds
       }
 
-      .floating-toast:hover {
-          background-color: rgba(255, 255, 255, 0.95); /* Darker on hover */
-      }
+      closeIcon.addEventListener('click', () => {
+          toast.classList.toggle('folded');
+          if (toast.classList.contains('folded')) {
+              setTimeout(() => {
+                  toast.classList.add('bounce');
+              }, 300); // Add a slight delay before starting the bounce animation
+          } else {
+              toast.classList.remove('bounce');
+          }
+      });
 
-      .toast-content {
-          flex: 1;
-          margin-right: 10px;
-      }
-
-      .toast-text {
-          font-weight: 600;
-          font-size: 12px;
-          line-height: 16px;
-          color: #065374;
-      }
-
-      .arrow-icon {
-          width: 20px;
-          height: 20px;
-      }
-
-      .arrow-icon svg {
-          width: 100%;
-          height: 100%;
-          fill: #065374;
-          transition: fill 0.3s ease;
-      }
-
-      .floating-toast:hover .arrow-icon svg {
-          fill: #00234c; /* Darker color on hover */
-      }
-
-      .close-icon {
-          width: 20px;
-          height: 20px;
-          margin-left: 10px;
-          cursor: pointer;
-      }
-
-      .close-icon svg {
-          width: 100%;
-          height: 100%;
-          fill: #065374;
-          transition: fill 0.3s ease;
-      }
-
-      .close-icon:hover svg {
-          fill: #ff0000; /* Red color on hover */
-      }
-  </style>
-
-  <div class="floating-toast" id="toast">
-      <div class="toast-content">
-          <div class="toast-text" style="font-family: 'Nunito', sans-serif;">
-              Please take our survey to help us serve you better and improve our platform.
-          </div>
-      </div>
-      <div class="arrow-icon" onclick="window.location.href = '/surveys/new';">
-          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="20" cy="20" r="20" fill="#E7F3E7"/>
-              <path d="M25 28C25 27.258 25.733 26.15 26.475 25.22C27.429 24.02 28.569 22.973 29.876 22.174C30.856 21.575 32.044 21 33 21M33 21C32.044 21 30.855 20.425 29.876 19.826C28.569 19.026 27.429 17.979 26.475 16.781C25.733 15.85 25 14.74 25 14M33 21L9 21" stroke="#12A00F"/>
-          </svg>
-      </div>
-      <div class="close-icon" onclick="document.getElementById('toast').style.display='none';">
-          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="20" cy="20" r="20" fill="#FFE7E7"/>
-              <path d="M25 15L15 25M15 15L25 25" stroke="#FF0000" stroke-width="2"/>
-          </svg>
-      </div>
-  </div>
+      toast.addEventListener('click', (e) => {
+          if (e.target !== closeIcon && !toast.classList.contains('folded')) {
+              window.location.href = '/surveys/new';
+          }
+      });
+  });
 
 
+</script>
+<style type="text/css">
+  .floating-toast {
+    position: fixed;
+    top: 75%;
+    right: 20px;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease, transform 0.6s ease;
+    width: 250px;
+}
+
+.floating-toast:hover {
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.toast-content {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.toast-text {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #065374;
+}
+
+.arrow-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.arrow-icon svg {
+    width: 100%;
+    height: 100%;
+    fill: #065374;
+    transition: fill 0.3s ease;
+}
+
+.floating-toast:hover .arrow-icon svg {
+    fill: #00234c;
+}
+
+.close-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.close-icon svg {
+    width: 100%;
+    height: 100%;
+    fill: #065374;
+    transition: fill 0.3s ease;
+}
+
+.close-icon:hover svg {
+    fill: #ff0000;
+}
+
+.folded {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 0;
+    box-shadow: none;
+    justify-content: center;
+    background-color: #0fc3ff;
+}
+
+.folded .toast-content, .folded .close-icon, .folded .arrow-icon {
+    display: none;
+}
+
+.folded .survey-icon {
+    display: block;
+}
+
+.survey-icon {
+    width: 20px;
+    height: 20px;
+    fill: white;
+    display: none;
+}
+
+.bounce {
+    animation: bounce 0.6s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
+</style>
 
 
 
 
+
+<script src="https://fast.wistia.com/embed/medias/8ofss99b1q.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>

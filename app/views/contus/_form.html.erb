@@ -12,7 +12,21 @@
   <% end %>
 
 
-  <div class="contact-form-container">
+<div id="contactus" class="contact-container" style="font-family: 'Nunito', sans-serif;">
+    <div class="contact-header">
+        <span class="contact-title text-[#04344d]">Contact us</span>
+        <span class="contact-subtitle">Our friendly team would love to hear from you.</span>
+    </div>
+    <div class="contact-info">
+        <div class="contact-email">
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 4.00049H20.5C21.6046 4.00049 22.5 4.89592 22.5 6.00049V18.0005C22.5 19.1051 21.6046 20.0005 20.5 20.0005H4.5C3.39543 20.0005 2.5 19.1051 2.5 18.0005V6.00049C2.5 4.89592 3.39543 4.00049 4.5 4.00049ZM14.15 15.4505L20.5 11.0005V8.90049L13.15 14.0505C12.7591 14.3218 12.2409 14.3218 11.85 14.0505L4.5 8.90049V11.0005L10.85 15.4505C11.841 16.1432 13.159 16.1432 14.15 15.4505Z" fill="black"/>
+            </svg>
+
+            <span>hello@reblox.app</span>
+        </div>
+    </div>
+    <div class="contact-form-container">
         <div class="contact-form-group">
             <label for="name">Full Name</label>
             
@@ -25,7 +39,7 @@
         <div class="contact-form-group">
             <label for="name">Subject</label>
             
-            <%= form.text_field :subject, placeholder:'Enter Subject', id:'subject' %>
+            <%= form.text_field :name, placeholder:'Enter Subject', id:'subject' %>
         </div>
         <div class="contact-form-group">
             <label for="message">Message</label>
@@ -33,6 +47,145 @@
           
         </div>
    
-        <%= form.submit "Contact Us", class:'contact-submit-button'  %>
+        <%= form.submit "Contact Us", class:'bg-[#0fc3ff] text-[#00234c] mt-8 px-4 py-2 rounded-lg font-bold w-full sm:w-auto'  %>
     </div>
-    <% end %>
+</div>
+<% end %>
+<style type="text/css">
+    .cbody {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
+        padding: 20px;
+    }
+
+    .contact-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .contact-header .contact-title {
+        font-weight: bold;
+        font-size: 36px;
+        color: #00234c;
+    }
+
+    .contact-header .contact-subtitle {
+        font-weight: normal;
+        font-size: 16px;
+        color: black;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .contact-info .contact-email {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-size: 16px;
+        color: black;
+    }
+
+    .contact-form-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        width: 100%;
+        max-width: 616px;
+    }
+
+    .contact-form-group {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .contact-form-group label {
+        font-size: 16px;
+        color: #00234c;
+    }
+
+    .contact-form-group input,
+    .contact-form-group textarea {
+        width: 100%;
+        padding: 0.75rem;
+        border: 1px solid #8c8c8c;
+        border-radius: 0.5rem;
+        font-size: 14px;
+        color: #8c8c8c;
+    }
+
+    .contact-form-group textarea {
+        resize: vertical;
+        height: 100px;
+    }
+
+    .contact-submit-button {
+        width: 100%;
+        max-width: 206px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #0fc3ff;
+        border-radius: 1rem;
+        font-weight: bold;
+        font-size: 18px;
+        color: #00234c;
+        cursor: pointer;
+        text-align: center;
+        border: 2px solid transparent;
+    }
+
+    @media (max-width: 768px) {
+        .contact-header .contact-title {
+            font-size: 30px;
+        }
+
+        .contact-header .contact-subtitle {
+            font-size: 14px;
+        }
+
+        .contact-form-container {
+            padding: 0 10px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .contact-header .contact-title {
+            font-size: 24px;
+        }
+
+        .contact-header .contact-subtitle {
+            font-size: 12px;
+        }
+
+        .contact-form-group input,
+        .contact-form-group textarea {
+            font-size: 12px;
+            padding: 0.5rem;
+        }
+
+        .contact-submit-button {
+            font-size: 16px;
+            padding: 0.5rem;
+        }
+    }
+</style>
