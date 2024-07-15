@@ -17,8 +17,8 @@
         <span class="loop-subtitle">Stay ahead of the curve with inspiring content, special insights and industry trends tailored to your investment journey in the ever-evolving digital landscape.</span>
     </div>
     <div class="loop-form-container">
-        <%= form.text_field :name, class:'loop-input-field', placeholder:'Enter Full Name' %>
-       <%= form.email_field :email, class:'loop-input-field', placeholder:'Enter Email Address' %>
+        <%= form.text_field :name, class:'loop-input-field', placeholder:'Enter Full Name', required:'true'%>
+       <%= form.email_field :email, class:'loop-input-field', placeholder:'Enter Email Address', required:'true'%>
         <%= form.submit "Stay in the loop", class:'loop-submit-button'  %>
     </div>
 </div>
