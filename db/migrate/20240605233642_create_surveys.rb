@@ -1,7 +1,7 @@
 class CreateSurveys < ActiveRecord::Migration[7.1]
   def change
     create_table :surveys do |t|
-      t.string :email
+      t.string :email, unique: true
       t.string :age
       t.string :location
       t.boolean :invested
