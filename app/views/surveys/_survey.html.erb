@@ -1,25 +1,5 @@
 <div id="<%= dom_id survey %>" class="container p-2 mx-auto sm:p-4 dark:text-gray-800">
-  <div class="overflow-x-auto">
-    <table class="min-w-full text-xs">
-     
-      <thead class="dark:bg-gray-300">
-        <tr class="text-left">
-          <th class="p-3">Email</th>
-          <th class="p-3">Age</th>
-          <th class="p-3">Current Location</th>
-          <th class="p-3">Previously Invested in Real Estate?</th>
-          <th class="p-3 text-right">If So, What?</th>
-          <th class="p-3"> Primary Goals or Objectives</th>
-          <th class="p-3">Main Challenges or Obstacles</th>
-          <th class="p-3">Any existing solutions you're using?</th>
-          <th class="p-3">Ideal Solution to the Problem(s)</th>
-          <th class="p-3">Idea of Investing in Real Estate Assets Digitally</th>
-          <th class="p-3 text-right">How important is liquidity</th>
-          <th class="p-3">Budget Range</th>
-          <th class="p-3">Exclusive Investor's waitlist and gain priority Access</th>
-        </tr>
-      </thead>
-      <tbody>
+
         <tr class="border-b border-opacity-20 dark:border-gray-300 dark:bg-gray-50">
           <td class="p-3">
             <p><%= survey.email %></p>
@@ -65,10 +45,13 @@
             <p><%= survey.ready %></p>
           
           </td>
+          <td class="p-3">
+            <p><%= button_to "Delete", @survey, method: :delete %></p>
+          
+          </td>
           
         </tr>
 
-      </tbody>
-    </table>
-  </div>
+
+    
 </div>

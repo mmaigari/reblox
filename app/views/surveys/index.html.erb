@@ -16,10 +16,37 @@
   </h2>
   
   <div id="surveys">
-    <% @surveys.each do |survey| %>
+   
+      <div class="overflow-x-auto">
+    <table class="min-w-full text-xs">
+     
+      <thead class="dark:bg-gray-300">
+        <tr class="text-left">
+          <th class="p-3">Email</th>
+          <th class="p-3">Age</th>
+          <th class="p-3">Current Location</th>
+          <th class="p-3">Previously Invested in Real Estate?</th>
+          <th class="p-3 text-right">If So, What?</th>
+          <th class="p-3"> Primary Goals or Objectives</th>
+          <th class="p-3">Main Challenges or Obstacles</th>
+          <th class="p-3">Any existing solutions you're using?</th>
+          <th class="p-3">Ideal Solution to the Problem(s)</th>
+          <th class="p-3">Idea of Investing in Real Estate Assets Digitally</th>
+          <th class="p-3 text-right">How important is liquidity</th>
+          <th class="p-3">Budget Range</th>
+          <th class="p-3">Exclusive Investor's waitlist and gain priority Access</th>
+          <th class="p-3"></th>
+        </tr>
+      </thead>
+      <tbody>
+         <% @surveys.each do |survey| %>
       <%= render survey %>
    
     <% end %>
+
+      </tbody>
+    </table>
+  </div>
   </div>
 
 </div>

@@ -124,7 +124,7 @@
                   <li>1. Email address</li>
                 </ol>
               </b>
-              <%= form.email_field :email, class:"w-full input1", placeholder: 'Enter Email Address' %>
+              <%= form.email_field :email, class:"w-full input1", placeholder: 'Enter Email Address', required: 'true' %>
              
             </div>
           </div>
@@ -171,7 +171,7 @@
                   <li>3. Please share your current location, including the state and country name (e.g., F.C.T., Nigeria) </li>
                 </ol>
               </b>
-              <%= form.text_field :location, class:"w-full input1", placeholder: 'Enter Location' %>
+              <%= form.text_field :location, class:"w-full input1", placeholder: 'Enter Location', required: 'true' %>
              
             </div>
           </div>
@@ -293,7 +293,7 @@
             <div class="input">
               <b class="email-address">
                 <ol class="email-address1">
-                  <li>How would you describe your ideal solution to the problem(s) mentioned above? </li>
+                  <li>8. How would you describe your ideal solution to the problem(s) mentioned above? </li>
                 </ol>
               </b>
               <%= form.text_field :solution_desc, class:"w-full input1", placeholder: 'Answer' %>
@@ -305,7 +305,7 @@
               <div class="please-select-the-container">
                 <ol class="please-select-the-option-that">
                   <li>
-                    8. How comfortable are you with the idea of investing in real estate assets digitally?
+                    9. How comfortable are you with the idea of investing in real estate assets digitally?
                   </li>
                 </ol>
               </div>
@@ -339,7 +339,7 @@
               <div class="please-select-the-container">
                 <ol class="please-select-the-option-that">
                   <li>
-                    9. How important is liquidity and the ability to efficiently buy and sell fractional real estate shares to you?
+                    10. How important is liquidity and the ability to efficiently buy and sell fractional real estate shares to you?
                   </li>
                 </ol>
               </div>
@@ -373,7 +373,7 @@
               <div class="please-select-the-container">
                 <ol class="please-select-the-option-that">
                   <li>
-                    10. What budget range are you willing to invest in real estate tokenization and fractional investments?
+                    11. What budget range are you willing to invest in real estate tokenization and fractional investments?
                   </li>
                 </ol>
               </div>
@@ -398,6 +398,29 @@
               <%= form.radio_button :range, "$1,000,000 and above" %>
               <%= form.label :range_1m, "$1,000,000 and above" %>
               </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="inputs1">
+            <div class="input2">
+              <div class="please-select-the-container">
+                <ol class="please-select-the-option-that">
+                  <li>
+                    12. Ready to secure your early bird spot on our exclusive investor's waitlist and gain priority access to our upcoming product launch?
+                  </li>
+                </ol>
+              </div>
+              <div class="frame-container">
+              <div class="frame-parent5">
+              <%= form.radio_button :ready, "Absolutely! I'm ready to spread my wings and join the early bird club. Let's tweet about it." %>
+              <%= form.label :ready, "Absolutely! I'm ready to spread my wings and join the early bird club. Let's tweet about it." %>
+              </div>
+              <div class="frame-parent5">
+              <%= form.radio_button :ready, "Not at this time, but thank you for the offer" %>
+              <%= form.label :ready, "Not at this time, but thank you for the offer" %>
+              </div>
+               
               </div>
             </div>
           </div>
