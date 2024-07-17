@@ -15,14 +15,39 @@
     
   </h2>
   
-  <div id="surveys">
+<div id="surveys" class="container p-2 mx-auto sm:p-4 dark:text-gray-800">
+  <div class="overflow-x-auto">
+    <table class="min-w-full text-xs">
+     
+      <thead class="dark:bg-gray-300">
+        <tr class="text-left">
+          <th class="p-3">Name</th>
+          <th class="p-3">Email</th>
+          <th class="p-3">Subject</th>
+          <th class="p-3">Message</th>
+          <th class="p-3"></th>
+
+        </tr>
+      </thead>
+      <tbody>
+        
     <% @contus.each do |contu| %>
     <%= render contu %>
    
     <% end %>
-  </div>
+         
+       
 
+      </tbody>
+    </table>
+  </div>
 </div>
+</div>
+
+
+
+
+
 
 <style>
   .body-loop {
